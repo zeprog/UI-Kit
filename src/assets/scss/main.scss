@@ -2,7 +2,85 @@
 @import "./utils/mixins.scss";
 @import "./utils/vars.scss";
 
-.container {
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.logo {
+    padding: 22px 0  0 22px;
+}
+
+.colors-type {
     width: 1100px;
     margin: 0 auto;
+    margin-top: 63px;
+    .colors {
+        width: 270px;
+        float: left;
+        margin-left: 25px;
+        }
+        .colors__rectan {
+            width: 70px;
+            height: 70px;
+            float: left;
+            margin-right: 40px;
+            border-radius: 6px;
+        }
+        .colors__title {
+            font-family: $widgetTitle sans-serif;
+            font-weight: bold;
+            font-size: 19px;
+            color: #1F2041;
+            padding: 10px 0 0;
+        }
+        .colors__subtitle {
+            font-family: $widgetTitle sans-serif;
+            font-weight: normal;
+            font-size: 19px;
+            color: #1F2041;
+            margin: 7px 0 29px;
+            letter-spacing: -1px;
+        }
 }
+
+.dark-blue {
+    background-color: #1F2041;
+}
+
+.dark-blue_75 {
+    background-color: #1F2041;
+    opacity: 0.75;
+}
+
+.dark-blue_50 {
+    background-color: #1F2041;
+    opacity: 0.5;
+}
+
+.dark-blue_25 {
+    background-color: #1F2041;
+    opacity: 0.25;
+}
+
+.dark-blue_5 {
+    background-color: #1F2041;
+    opacity: 0.05;
+}
+
+.purple {
+    background-color: #BC9CFF;
+}
+
+.green {
+    background-color: #6FCF97;
+}
+
+//.types {
+    //width: 403px;
+    //float: right;
+//}
