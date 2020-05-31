@@ -80,7 +80,81 @@ p {
     background-color: #6FCF97;
 }
 
-//.types {
-    //width: 403px;
-    //float: right;
-//}
+.types {
+    width: 410px;
+    float: right;
+    margin-right: -30px;
+    .types__block {
+        display: flex;
+        margin-bottom: 50px;
+        width: 410px;
+    }
+    .types__title {
+        font-family: $mainFont;
+        font-weight: normal;
+        color: #1F2041;
+        opacity: 0.25;
+        width: 36px;
+    }
+    .types__text {
+        color: #1F2041;
+    }
+}
+
+//titles
+
+.types__title_h1 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.types__title_h2 {
+    font-size: 19px;
+    margin-left: 5px;
+    text-align: right;
+}
+
+.types__title_h3 {
+    font-size: 13px;
+    text-align: right;
+    margin-left: 4px;
+}
+
+.types__title-body {
+    font-size: 14px;
+}
+
+//text
+
+.types__text_h1 {
+    font-family: $mainFont sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 1px 0 0 30px;
+}
+
+.types__text_h2 {
+    font-family: $mainFont sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 0  0 0 31px;
+    line-height: 24px;
+}
+
+.types__text_h3 {
+    font-family: $mainFont sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 0 0 28px;
+}
+
+.types__body-text {
+    font-family: $mainFont sans-serif;
+    font-weight: normal; 
+    font-size: 14px;
+    opacity: 0.75;
+    padding: 0px 0 0 32px;
+    line-height: 20px;
+}
