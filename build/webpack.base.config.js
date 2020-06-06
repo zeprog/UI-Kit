@@ -8,7 +8,7 @@ const PATHS = {
     dist: path.join(__dirname, '../dist'),
     assets: 'assets/'
 }
-const PAGES_DIR = `${PATHS.src}/pug/pages/`
+const PAGES_DIR = `${PATHS.src}/pug`
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 module.exports = {
@@ -31,7 +31,10 @@ module.exports = {
         },
         {
             test: /\.pug$/,
-            loader: 'pug-loader'
+            loader: 'pug-loader',
+            options: {
+                pretty: true
+            }
         },
         {
             test: /\.(png|jpg|svg|gif)$/,
