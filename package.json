@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --config ./build/webpack.dev.config.js",
+    "dev": "webpack-dev-server --open --config ./build/webpack.dev.config.js --watch",
     "build": "webpack --config ./build/webpack.build.config.js"
   },
   "browserslist": [
@@ -44,5 +44,8 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
