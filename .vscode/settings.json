@@ -1,6 +1,5 @@
 {
-    "editor.formatOnSave": true,
-    "tslint.autoFixOnSave": true,
+    "editor.formatOnSave": false,
     "beautify.config": {
         "beautify.language": {
             "js": [

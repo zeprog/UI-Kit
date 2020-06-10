@@ -1,1 +1,0 @@
-import './Headers&footers.scss'

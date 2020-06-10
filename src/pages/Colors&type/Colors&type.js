@@ -1,1 +1,0 @@
-import './Colors&type.scss'
