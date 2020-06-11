@@ -1,0 +1,18 @@
+.form {
+    margin-top: 5px;
+    border: 1px solid $mainColor;
+    opacity: 0.25;
+    border-radius: 4px;
+}
+
+.form__input {
+    padding: 12px 15px 11px 13px;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    color: $mainColor;
+    font-family: $mainFont sans-serif;
+    font-size: 13.5px;
+}

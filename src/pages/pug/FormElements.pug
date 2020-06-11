@@ -4,4 +4,25 @@ block title
 block body
     .logo
         img.logo__icon(src="assets/img/Group.svg", alt="")
-    p tfgfumgu
+    .form-elements
+        .form-elements__column
+            .form-elements__form
+                .form__text
+                    h3.form__title Text Field
+                    p.form__subtitle.subtitle-first Default
+                include ./includes/inputs/input-text__default
+            .form-elements__form
+                .form__text
+                    h3.form__title Text Field
+                    p.form__subtitle.subtitle Hover / Focus
+                include ./includes/inputs/input-text__active
+            .form-element__form
+                .form__text
+                    h3.form__title Dropdown
+                    p.form__subtitle.subtitle Default
+                include ./includes/dropdowns/dropdown-guests__default.pug
+            .form-element__form
+                .form__text
+                    h3.form__title Masked text field
+                    p.form__subtitle.subtitle Default
+                include ./includes/inputs/input-text__mask.pug

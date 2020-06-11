@@ -1,8 +1,11 @@
-@import "../../utils/scss/vars.scss";
+@import "../../utils/vars.scss";
 
 body {
     margin: 0;
     padding: 0;
+}
+
+.cards__background {
     background: #F4F4F6;
 }
 

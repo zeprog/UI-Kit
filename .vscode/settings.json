@@ -1,5 +1,5 @@
 {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "beautify.config": {
         "beautify.language": {
             "js": [

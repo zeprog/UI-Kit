@@ -1,0 +1,22 @@
+.dropdown-guests {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #C7C7CF;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+
+    .dropdown-guests__placeholder {
+        padding: 12px 15px 11px 13px;
+        font-family: $mainFont sans-serif;
+        font-size: 13.5px;
+        color: $mainColor;
+        opacity: 0.75;
+    }
+
+    .dropdown-guests__arrow {
+        width: 13px;
+        background-clip: text;
+        margin-right: 13px;
+    }
+}
