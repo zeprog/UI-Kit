@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -361,100 +361,84 @@ module.exports = function (list, options) {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-var api = __webpack_require__(0);
-            var content = __webpack_require__(2);
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
+(function ($) {
+  $.fn.maskInput = function () {
+    return this.each(function () {
+      $("#form__input_mask").mask("99.99.9999", {
+        placeholder: "дд.мм.гггг"
+      });
+    });
+  };
+})(jQuery);
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+var api = __webpack_require__(0);
+            var content = __webpack_require__(3);
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(0);
-            var content = __webpack_require__(4);
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+var api = __webpack_require__(0);
+            var content = __webpack_require__(5);
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(0);
-            var content = __webpack_require__(6);
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var api = __webpack_require__(0);
-            var content = __webpack_require__(8);
+            var content = __webpack_require__(7);
 
             content = content.__esModule ? content.default : content;
 
@@ -474,13 +458,43 @@ var update = api(content, options);
 module.exports = content.locals || {};
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(0);
+            var content = __webpack_require__(9);
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
 /* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -488,26 +502,31 @@ module.exports = content.locals || {};
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./src/pages/scss/Cards.scss
-var Cards = __webpack_require__(1);
+var Cards = __webpack_require__(2);
 
 // CONCATENATED MODULE: ./src/pages/js/Cards.js
 
 // EXTERNAL MODULE: ./src/pages/scss/Colors&type.scss
-var Colors_type = __webpack_require__(3);
+var Colors_type = __webpack_require__(4);
 
 // CONCATENATED MODULE: ./src/pages/js/Colors&type.js
 
 // EXTERNAL MODULE: ./src/pages/scss/Headers&footers.scss
-var Headers_footers = __webpack_require__(5);
+var Headers_footers = __webpack_require__(6);
 
 // CONCATENATED MODULE: ./src/pages/js/Headers&footers.js
 
 // EXTERNAL MODULE: ./src/pages/scss/FormElements.scss
-var FormElements = __webpack_require__(7);
+var FormElements = __webpack_require__(8);
+
+// EXTERNAL MODULE: ./src/pages/pug/includes/inputs/jquery.maskInput.js
+var jquery_maskInput = __webpack_require__(1);
 
 // CONCATENATED MODULE: ./src/pages/js/FormElements.js
 
+
 // CONCATENATED MODULE: ./src/index.js
+
 
 
 
