@@ -1,41 +1,61 @@
 @import '../../utils/vars.scss';
-@import '../pug/includes/inputs/input-text__default.scss';
-@import '../pug/includes/inputs/input-text__active.scss';
+@import '../pug/includes/inputs/text-default/input-text__default.scss';
+@import '../pug/includes/inputs/text-active/input-text__active.scss';
 @import '../pug/includes/dropdowns/dropdown-guests__default.scss';
-@import '../pug/includes/inputs/input-text__mask.scss';
+@import '../pug/includes/inputs//mask-input/input-text__mask.scss';
+@import '../pug/includes/dropdowns/date-drop/input-date.scss';
 
 .form-elements {
     width: 1160px;
     margin: 0 auto;
 }
 
+.form-elements__form {
+    padding-bottom: 20px;
+}
+
 .form-elements__column {
     margin: 54px 0 0 39px;
     width: 303px;
-
-    .form-elements__form {
-        padding-bottom: 20px;
-    }
 
     .form__text {
         display: flex;
         justify-content: space-between;
         font-family: $mainFont sans-serif;
-        text-transform: uppercase;
-
-        .form__title {
-            font-size: 11px;
-            letter-spacing: 0.2px;
-            color: $mainColor;
-        }
-
-        .form__subtitle {
-            font-size: 11px;
-            position: relative;
-            bottom: 3px;
-        }
-
     }
+
+    .form__date-block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 19px;
+
+        .form__date-drop {
+            width: 150px;
+
+            .date-title {
+                font-family: $mainFont sans-serif;
+            }
+        }
+    }
+}
+
+.mask-input__block {
+    margin-top: 3px;
+}
+
+.form__title {
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    color: $mainColor;
+    text-transform: uppercase;
+}
+
+.form__subtitle {
+    font-size: 11px;
+    position: relative;
+    bottom: 3px;
+    text-transform: uppercase;
 }
 
 .subtitle-first {
@@ -44,7 +64,7 @@
 
 .subtitle {
     position: relative;
-    top: 0.3px;
+    top: 0.2px;
     color: $mainColor;
     opacity: 0.75;
 }

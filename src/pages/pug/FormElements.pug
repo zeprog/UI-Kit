@@ -10,19 +10,27 @@ block body
                 .form__text
                     h3.form__title Text Field
                     p.form__subtitle.subtitle-first Default
-                include ./includes/inputs/input-text__default
+                include ./includes/inputs/text-default/input-text__default
             .form-elements__form
                 .form__text
                     h3.form__title Text Field
                     p.form__subtitle.subtitle Hover / Focus
-                include ./includes/inputs/input-text__active
-            .form-element__form
+                include ./includes/inputs/text-active/input-text__active
+            .form-elements__form
                 .form__text
                     h3.form__title Dropdown
                     p.form__subtitle.subtitle Default
                 include ./includes/dropdowns/dropdown-guests__default.pug
-            .form-element__form
-                .form__text
+            .form-elements__form
+                .form__text.mask-input__block
                     h3.form__title Masked text field
                     p.form__subtitle.subtitle Default
-                include ./includes/inputs/input-text__mask.pug
+                include ./includes/inputs/mask-input/input-text__mask.pug
+            .form-elements__form
+                .form__date-block
+                    .form__date-drop
+                        h3.form__title.date-title Date Dropdown
+                        include ./includes/dropdowns/date-drop/input-date.pug
+                    .form__date-drop
+                        h3.form__title.date-title Date Dropdown
+                        include ./includes/dropdowns/date-drop/input-date.pug

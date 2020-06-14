@@ -1,0 +1,19 @@
+.form__date {
+    margin-top: 5px;
+    border: 1px solid #8F8FA0;
+    border-radius: 4px;
+
+    .form__input-date {
+        padding: 12px 15px 11px 13px;
+        border-radius: 4px;
+        width: 100%;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        color: $mainColor;
+        opacity: 0.75;
+        font-family: $mainFont sans-serif;
+        font-size: 13.5px;
+        text-transform: uppercase;
+    }
+}
