@@ -15,15 +15,11 @@ block body
                         .vars__coming
                             .vars__title.title
                                 h3 Прибытие
-                            form(action="").vars__form
-                                input(type="date" placeholder="ДД.ММ.ГГГГ")
-                                img(src="/assets/img/arrow-down.svg", alt="").arrow-down
+                            include ./includes/dropdowns/date-drop/input-date.pug
                         .vars__depart
                             .vars__title.title
                                 h3 Выезд
-                            form(action="").vars__form
-                                input(type="date" placeholder="дд.мм.гггг") 
-                                img(src="/assets/img/arrow-down.svg", alt="").arrow-down
+                            include ./includes/dropdowns/date-drop/input-date.pug
                     .search__guests
                         .guests__title.title
                             h3 Гости

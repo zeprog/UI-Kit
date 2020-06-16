@@ -1,19 +1,41 @@
 .form__date {
     margin-top: 5px;
-    border: 1px solid #8F8FA0;
+    border: 1px solid #C7C7CF;
     border-radius: 4px;
+    position: relative;
 
     .form__input-date {
-        padding: 12px 15px 11px 13px;
+        padding: 7px 8px 11px 12px;
         border-radius: 4px;
         width: 100%;
         border: none;
         outline: none;
         -webkit-appearance: none;
         color: $mainColor;
-        opacity: 0.75;
         font-family: $mainFont sans-serif;
         font-size: 13.5px;
         text-transform: uppercase;
+        position: relative;
+
+        &::-webkit-calendar-picker-indicator {
+            padding-left: 0;
+            margin-left: 0;
+            cursor: pointer;
+        }
+    }
+
+    .form__span {
+        position: absolute;
+        top: 9px;
+        right: 6px;
+        width: 25px;
+        height: 25px;
+        background: #fff;
+        pointer-events: none;
+
+        .form__button {
+            border: none;
+            background: transparent;
+        }
     }
 }

@@ -1,3 +1,45 @@
+.form__date {
+    margin-top: 5px;
+    border: 1px solid #c7c7cf;
+    border-radius: 4px;
+    position: relative
+}
+
+.form__date .form__input-date {
+    padding: 7px 8px 11px 12px;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    color: #1f2041;
+    font-family: Montserrat, sans-serif;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    position: relative
+}
+
+.form__date .form__input-date::-webkit-calendar-picker-indicator {
+    padding-left: 0;
+    margin-left: 0;
+    cursor: pointer
+}
+
+.form__date .form__span {
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    pointer-events: none
+}
+
+.form__date .form__span .form__button {
+    border: none;
+    background: rgba(0, 0, 0, 0)
+}
+
 body {
     margin: 0;
     padding: 0
@@ -796,7 +838,6 @@ i {
     outline: none;
     -webkit-appearance: none;
     color: #1f2041;
-    opacity: .75;
     font-family: Montserrat, sans-serif;
     font-size: 13.5px
 }
@@ -818,8 +859,7 @@ i {
     padding: 12px 15px 11px 13px;
     font-family: Montserrat, sans-serif;
     font-size: 13.5px;
-    color: #1f2041;
-    opacity: .75
+    color: #1f2041
 }
 
 .dropdown-guests .dropdown-guests__arrow {
@@ -852,22 +892,44 @@ i {
 
 .form__date {
     margin-top: 5px;
-    border: 1px solid #8f8fa0;
-    border-radius: 4px
+    border: 1px solid #c7c7cf;
+    border-radius: 4px;
+    position: relative
 }
 
 .form__date .form__input-date {
-    padding: 12px 15px 11px 13px;
+    padding: 7px 8px 11px 12px;
     border-radius: 4px;
     width: 100%;
     border: none;
     outline: none;
     -webkit-appearance: none;
     color: #1f2041;
-    opacity: .75;
     font-family: Montserrat, sans-serif;
     font-size: 13.5px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    position: relative
+}
+
+.form__date .form__input-date::-webkit-calendar-picker-indicator {
+    padding-left: 0;
+    margin-left: 0;
+    cursor: pointer
+}
+
+.form__date .form__span {
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    pointer-events: none
+}
+
+.form__date .form__span .form__button {
+    border: none;
+    background: rgba(0, 0, 0, 0)
 }
 
 .form-elements {
@@ -904,7 +966,7 @@ i {
 }
 
 .form-elements__column .form__date-block .form__date-drop {
-    width: 150px
+    width: 143px
 }
 
 .form-elements__column .form__date-block .form__date-drop .date-title {
