@@ -7,6 +7,7 @@
 @import '../pug/includes/inputs/subscribe-input/subscribe-input.scss';
 @import '../pug/includes/inputs/checkbox-input/checkbox-input.scss';
 @import '../pug/includes/inputs/radio-input/radio-input.scss';
+@import '../pug/includes/inputs/toggle-input/toggle-input.scss';
 
 .form-elements {
     width: 1160px;
@@ -72,7 +73,6 @@
 
 .form-elements__column-checkbox {
     margin: 54px 0 0 120px;
-    width: 250px;
 
     .form-elements__checkbox {
         margin-bottom: 36px;
@@ -80,5 +80,13 @@
 
     .text {
         margin-bottom: 15px;
+    }
+
+    .form-elements__radio {
+        margin-bottom: 40px;
+    }
+
+    .form-elements__toggle {
+        margin-bottom: 40px;
     }
 }

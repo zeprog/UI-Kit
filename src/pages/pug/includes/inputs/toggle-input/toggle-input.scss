@@ -1,0 +1,64 @@
+.toggle {
+    position: relative;
+    margin-bottom: 15px;
+
+    .toggle__input {
+        appearance: none;
+        position: absolute;
+    }
+
+    .toggle__label {
+        padding-left: 50px;
+        font-family: $mainFont sans-serif;
+        color: #6e6f87;
+        font-size: 13px;
+
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            outline: none;
+            position: absolute;
+            background: #fff;
+            border: 1px solid #C7C7CF;
+            border-radius: 10px;
+            width: 34px;
+            height: 16px;
+            margin-left: 0px;
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            top: 3px;
+            left: 3px;
+            background: #C7C7CF;
+            transition: 0.5s;
+
+        }
+    }
+
+    .toggle__input:checked+.toggle__label::before {
+        border-color: #BC9CFF;
+    }
+
+    .toggle__input:checked+.toggle__label::after {
+        left: 23px;
+        background: rgba(187, 156, 255, 1);
+        background: -moz-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(187, 156, 255, 1)), color-stop(100%, rgba(139, 164, 249, 1)));
+        background: -webkit-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: -o-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: linear-gradient(to bottom, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb9cff', endColorstr='#8ba4f9', GradientType=0);
+        transition: 0.5s;
+    }
+}

@@ -1136,6 +1136,74 @@ i {
     opacity: 1
 }
 
+.toggle {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.toggle .toggle__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute
+}
+
+.toggle .toggle__label {
+    padding-left: 50px;
+    font-family: Montserrat, sans-serif;
+    color: #6e6f87;
+    font-size: 13px
+}
+
+.toggle .toggle__label:before {
+    outline: none;
+    background: #fff;
+    border: 1px solid #c7c7cf;
+    border-radius: 10px;
+    width: 34px;
+    height: 16px;
+    margin-left: 0;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.toggle .toggle__label:after,
+.toggle .toggle__label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+.toggle .toggle__label:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    background: #c7c7cf
+}
+
+.toggle .toggle__input:checked+.toggle__label:before {
+    border-color: #bc9cff
+}
+
+.toggle .toggle__input:checked+.toggle__label:after {
+    left: 23px;
+    background: #bb9cff;
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #bb9cff), color-stop(100%, #8ba4f9));
+    background: -o-linear-gradient(top, #bb9cff 0, #8ba4f9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#bb9cff), to(#8ba4f9));
+    background: linear-gradient(180deg, #bb9cff 0, #8ba4f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bb9cff", endColorstr="#8ba4f9", GradientType=0);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
 .form-elements {
     width: 1160px;
     margin: 0 auto;
@@ -1209,8 +1277,7 @@ i {
 }
 
 .form-elements__column-checkbox {
-    margin: 54px 0 0 120px;
-    width: 250px
+    margin: 54px 0 0 120px
 }
 
 .form-elements__column-checkbox .form-elements__checkbox {
@@ -1219,4 +1286,9 @@ i {
 
 .form-elements__column-checkbox .text {
     margin-bottom: 15px
+}
+
+.form-elements__column-checkbox .form-elements__radio,
+.form-elements__column-checkbox .form-elements__toggle {
+    margin-bottom: 40px
 }
