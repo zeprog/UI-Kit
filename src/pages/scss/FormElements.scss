@@ -6,6 +6,7 @@
 @import '../pug/includes/dropdowns/date-drop/input-date.scss';
 @import '../pug/includes/inputs/subscribe-input/subscribe-input.scss';
 @import '../pug/includes/inputs/checkbox-input/checkbox-input.scss';
+@import '../pug/includes/inputs/radio-input/radio-input.scss';
 
 .form-elements {
     width: 1160px;
@@ -77,7 +78,7 @@
         margin-bottom: 36px;
     }
 
-    .checkbox__text {
+    .text {
         margin-bottom: 15px;
     }
 }

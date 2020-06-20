@@ -1062,6 +1062,80 @@ i {
     opacity: 1
 }
 
+.radio-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.radio_man {
+    margin-right: 20px
+}
+
+.radio {
+    position: relative
+}
+
+.radio .radio__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute
+}
+
+.radio .radio__label {
+    padding-left: 30px;
+    font-family: Montserrat, sans-serif;
+    color: #9d9dac;
+    font-size: 13px
+}
+
+.radio .radio__label:before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #cbcbcf;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+.radio .radio__label:after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #bb9cff;
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #bb9cff), color-stop(100%, #8ba4f9));
+    background: -o-linear-gradient(top, #bb9cff 0, #8ba4f9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#bb9cff), to(#8ba4f9));
+    background: linear-gradient(180deg, #bb9cff 0, #8ba4f9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bb9cff", endColorstr="#8ba4f9", GradientType=0);
+    position: absolute;
+    top: 3.5px;
+    left: 4px;
+    z-index: 1;
+    opacity: 0
+}
+
+.radio .radio__input:checked+.radio__label {
+    color: #1f2041;
+    opacity: .75
+}
+
+.radio .radio__input:checked+.radio__label:before {
+    border-color: #bc9cff
+}
+
+.radio .radio__input:checked+.radio__label:after {
+    opacity: 1
+}
+
 .form-elements {
     width: 1160px;
     margin: 0 auto;
@@ -1143,6 +1217,6 @@ i {
     margin-bottom: 36px
 }
 
-.form-elements__column-checkbox .checkbox__text {
+.form-elements__column-checkbox .text {
     margin-bottom: 15px
 }

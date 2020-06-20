@@ -1,0 +1,71 @@
+.radio-block {
+    display: flex;
+}
+
+.radio_man {
+    margin-right: 20px;
+}
+
+.radio {
+    position: relative;
+
+    .radio__input {
+        appearance: none;
+        position: absolute;
+    }
+
+    .radio__label {
+        padding-left: 30px;
+        font-family: $mainFont sans-serif;
+        color: #9d9dac;
+        font-size: 13px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 17px;
+            height: 17px;
+            border: 1px solid #cbcbcf;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: rgba(187, 156, 255, 1);
+            background: -moz-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(187, 156, 255, 1)), color-stop(100%, rgba(139, 164, 249, 1)));
+            background: -webkit-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+            background: -o-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+            background: linear-gradient(to bottom, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb9cff', endColorstr='#8ba4f9', GradientType=0);
+            position: absolute;
+            top: 3.5px;
+            left: 4px;
+            z-index: 1;
+            opacity: 0;
+        }
+    }
+
+    .radio__input:checked+.radio__label {
+        color: $mainColor;
+        opacity: 0.75;
+    }
+
+    .radio__input:checked+.radio__label::before {
+        border-color: #BC9CFF;
+    }
+
+    .radio__input:checked+.radio__label::after {
+        opacity: 1;
+    }
+}
