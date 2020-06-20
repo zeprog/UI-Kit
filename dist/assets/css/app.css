@@ -807,8 +807,7 @@ i {
 
 .form {
     margin-top: 5px;
-    border: 1px solid #1f2041;
-    opacity: .25;
+    border: 1px solid #d4d4da;
     border-radius: 4px
 }
 
@@ -819,9 +818,29 @@ i {
     border: none;
     outline: none;
     -webkit-appearance: none;
-    color: #1f2041;
+    color: #d5d5db;
     font-family: Montserrat, sans-serif;
     font-size: 13.5px
+}
+
+.form__input::-webkit-input-placeholder {
+    color: #d5d5db
+}
+
+.form__input::-moz-placeholder {
+    color: #d5d5db
+}
+
+.form__input:-ms-input-placeholder {
+    color: #d5d5db
+}
+
+.form__input::-ms-input-placeholder {
+    color: #d5d5db
+}
+
+.form__input::placeholder {
+    color: #d5d5db
 }
 
 .form_active {
@@ -932,26 +951,140 @@ i {
     background: rgba(0, 0, 0, 0)
 }
 
+.form-subscribe {
+    width: 253px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+    border: 1px solid #d4d4da;
+    border-radius: 4px
+}
+
+.form-subscribe .form__input {
+    padding: 12px 15px 11px 13px;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    color: #d5d5db;
+    font-family: Montserrat, sans-serif;
+    font-size: 13.5px
+}
+
+.form-subscribe .form__input::-webkit-input-placeholder {
+    color: #d5d5db
+}
+
+.form-subscribe .form__input::-moz-placeholder {
+    color: #d5d5db
+}
+
+.form-subscribe .form__input:-ms-input-placeholder {
+    color: #d5d5db
+}
+
+.form-subscribe .form__input::-ms-input-placeholder {
+    color: #d5d5db
+}
+
+.form-subscribe .form__input::placeholder {
+    color: #d5d5db
+}
+
+.form-subscribe .form__arrow-right {
+    width: 20px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-right: 13px;
+    opacity: 1;
+    cursor: pointer
+}
+
+.checkbox {
+    position: relative;
+    margin-top: 12px
+}
+
+.checkbox .checkbox__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute
+}
+
+.checkbox .checkbox__label {
+    padding-left: 30px;
+    font-family: Montserrat, sans-serif;
+    color: #9d9dac;
+    font-size: 13px
+}
+
+.checkbox .checkbox__label:before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #cbcbcf;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+.checkbox .checkbox__label:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(/assets/img/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2
+}
+
+.checkbox .checkbox__label span {
+    margin-left: 30px
+}
+
+.checkbox .checkbox__input:checked+.checkbox__label:before {
+    border-color: #bc9cff
+}
+
+.checkbox .checkbox__input:checked+.checkbox__label:after {
+    opacity: 1
+}
+
 .form-elements {
     width: 1160px;
-    margin: 0 auto
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .form-elements__form {
     padding-bottom: 20px
 }
 
-.form-elements__column {
+.form-elements__column-form {
     margin: 54px 0 0 39px;
     width: 303px
 }
 
-.form-elements__column .form__text {
+.form-elements__column-form .text {
     font-family: Montserrat, sans-serif
 }
 
-.form-elements__column .form__date-block,
-.form-elements__column .form__text {
+.form-elements__column-form .form__date-block,
+.form-elements__column-form .text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -960,30 +1093,27 @@ i {
     justify-content: space-between
 }
 
-.form-elements__column .form__date-block {
+.form-elements__column-form .form__date-block {
     width: 100%;
     margin-top: 19px
 }
 
-.form-elements__column .form__date-block .form__date-drop {
+.form-elements__column-form .form__date-block .form__date-drop {
     width: 143px
-}
-
-.form-elements__column .form__date-block .form__date-drop .date-title {
-    font-family: Montserrat, sans-serif
 }
 
 .mask-input__block {
     margin-top: 3px
 }
 
-.form__title {
+.title {
     letter-spacing: .2px;
-    color: #1f2041
+    color: #1f2041;
+    font-family: Montserrat, sans-serif
 }
 
 .form__subtitle,
-.form__title {
+.title {
     font-size: 11px;
     text-transform: uppercase
 }
@@ -1002,4 +1132,17 @@ i {
     top: .2px;
     color: #1f2041;
     opacity: .75
+}
+
+.form-elements__column-checkbox {
+    margin: 54px 0 0 120px;
+    width: 250px
+}
+
+.form-elements__column-checkbox .form-elements__checkbox {
+    margin-bottom: 36px
+}
+
+.form-elements__column-checkbox .checkbox__text {
+    margin-bottom: 15px
 }

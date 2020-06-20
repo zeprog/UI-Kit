@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10248,10 +10248,25 @@ module.exports = content.locals || {};
 
 /***/ }),
 /* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
+/* harmony import */ var _scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0__);
+
+$(document).ready(function () {
+  $(".form__input_mask").mask("99.99.9999", {
+    placeholder: "дд.мм.гггг"
+  });
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(1)))
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(0);
-            var content = __webpack_require__(10);
+            var content = __webpack_require__(11);
 
             content = content.__esModule ? content.default : content;
 
@@ -10271,13 +10286,13 @@ var update = api(content, options);
 module.exports = content.locals || {};
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10306,10 +10321,8 @@ var Headers_footers = __webpack_require__(7);
 
 // CONCATENATED MODULE: ./src/pages/js/Headers&footers.js
 
-// EXTERNAL MODULE: ./src/pages/scss/FormElements.scss
+// EXTERNAL MODULE: ./src/pages/js/FormElements.js
 var FormElements = __webpack_require__(9);
-
-// CONCATENATED MODULE: ./src/pages/js/FormElements.js
 
 // CONCATENATED MODULE: ./src/index.js
 

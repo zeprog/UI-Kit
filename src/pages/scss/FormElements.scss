@@ -4,21 +4,24 @@
 @import '../pug/includes/dropdowns/dropdown-guests__default.scss';
 @import '../pug/includes/inputs//mask-input/input-text__mask.scss';
 @import '../pug/includes/dropdowns/date-drop/input-date.scss';
+@import '../pug/includes/inputs/subscribe-input/subscribe-input.scss';
+@import '../pug/includes/inputs/checkbox-input/checkbox-input.scss';
 
 .form-elements {
     width: 1160px;
     margin: 0 auto;
+    display: flex;
 }
 
 .form-elements__form {
     padding-bottom: 20px;
 }
 
-.form-elements__column {
+.form-elements__column-form {
     margin: 54px 0 0 39px;
     width: 303px;
 
-    .form__text {
+    .text {
         display: flex;
         justify-content: space-between;
         font-family: $mainFont sans-serif;
@@ -32,10 +35,6 @@
 
         .form__date-drop {
             width: 143px;
-
-            .date-title {
-                font-family: $mainFont sans-serif;
-            }
         }
     }
 }
@@ -44,11 +43,12 @@
     margin-top: 3px;
 }
 
-.form__title {
+.title {
     font-size: 11px;
     letter-spacing: 0.2px;
     color: $mainColor;
     text-transform: uppercase;
+    font-family: $mainFont sans-serif;
 }
 
 .form__subtitle {
@@ -67,4 +67,17 @@
     top: 0.2px;
     color: $mainColor;
     opacity: 0.75;
+}
+
+.form-elements__column-checkbox {
+    margin: 54px 0 0 120px;
+    width: 250px;
+
+    .form-elements__checkbox {
+        margin-bottom: 36px;
+    }
+
+    .checkbox__text {
+        margin-bottom: 15px;
+    }
 }

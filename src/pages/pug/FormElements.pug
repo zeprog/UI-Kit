@@ -5,32 +5,44 @@ block body
     .logo
         img.logo__icon(src="assets/img/Group.svg", alt="")
     .form-elements
-        .form-elements__column
+        .form-elements__column-form
             .form-elements__form
-                .form__text
-                    h3.form__title Text Field
+                .form__text.text
+                    h3.form__title.title Text Field
                     p.form__subtitle.subtitle-first Default
                 include ./includes/inputs/text-default/input-text__default
             .form-elements__form
-                .form__text
-                    h3.form__title Text Field
+                .form__text.text
+                    h3.form__title.title Text Field
                     p.form__subtitle.subtitle Hover / Focus
                 include ./includes/inputs/text-active/input-text__active
             .form-elements__form
-                .form__text
-                    h3.form__title Dropdown
+                .form__text.text
+                    h3.form__title.title Dropdown
                     p.form__subtitle.subtitle Default
                 include ./includes/dropdowns/dropdown-guests__default.pug
             .form-elements__form
-                .form__text.mask-input__block
-                    h3.form__title Masked text field
+                .form__text.text.mask-input__block
+                    h3.form__title.title Masked text field
                     p.form__subtitle.subtitle Default
                 include ./includes/inputs/mask-input/input-text__mask.pug
             .form-elements__form
                 .form__date-block
                     .form__date-drop
-                        h3.form__title.date-title Date Dropdown
+                        h3.form__title.title.date-title Date Dropdown
                         include ./includes/dropdowns/date-drop/input-date.pug
                     .form__date-drop
-                        h3.form__title.date-title Date Dropdown
+                        h3.form__title.title.date-title Date Dropdown
                         include ./includes/dropdowns/date-drop/input-date.pug
+
+
+            .form-elements__form
+                .form__text.text
+                    h3.form__title.title Subscription text field
+                include ./includes/inputs/subscribe-input/subscribe-input.pug
+        .form-elements__column-checkbox
+            .form-elements__checkbox
+                .checkbox__text.text
+                    h3.checkbox__title.title Checkbox Buttons
+                include ./includes/inputs/checkbox-input/checkbox-input.pug
+                

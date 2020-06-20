@@ -11,24 +11,24 @@
 <body>
     <div class="logo"><img class="logo__icon" src="assets/img/Group.svg" alt=""></div>
     <div class="form-elements">
-        <div class="form-elements__column">
+        <div class="form-elements__column-form">
             <div class="form-elements__form">
-                <div class="form__text">
-                    <h3 class="form__title">Text Field</h3>
+                <div class="form__text text">
+                    <h3 class="form__title title">Text Field</h3>
                     <p class="form__subtitle subtitle-first">Default</p>
                 </div>
                 <form class="form" action=""><input class="form__input" type="email" name="mail" placeholder="Email" requare></form>
             </div>
             <div class="form-elements__form">
-                <div class="form__text">
-                    <h3 class="form__title">Text Field</h3>
+                <div class="form__text text">
+                    <h3 class="form__title title">Text Field</h3>
                     <p class="form__subtitle subtitle">Hover / Focus</p>
                 </div>
                 <form class="form_active" action=""><input class="form__input_active" placeholder="This is pretty awesome"></form>
             </div>
             <div class="form-elements__form">
-                <div class="form__text">
-                    <h3 class="form__title">Dropdown</h3>
+                <div class="form__text text">
+                    <h3 class="form__title title">Dropdown</h3>
                     <p class="form__subtitle subtitle">Default</p>
                 </div>
                 <div class="dropdown-guests">
@@ -36,8 +36,8 @@
                 </div>
             </div>
             <div class="form-elements__form">
-                <div class="form__text mask-input__block">
-                    <h3 class="form__title">Masked text field</h3>
+                <div class="form__text text mask-input__block">
+                    <h3 class="form__title title">Masked text field</h3>
                     <p class="form__subtitle subtitle">Default</p>
                 </div>
                 <form class="form_mask" action=""><input class="form__input_mask" name="birthdate" requare id="form__input_mask"></form>
@@ -45,18 +45,34 @@
             <div class="form-elements__form">
                 <div class="form__date-block">
                     <div class="form__date-drop">
-                        <h3 class="form__title date-title">Date Dropdown</h3>
+                        <h3 class="form__title title date-title">Date Dropdown</h3>
                         <form action="">
                             <div class="form__date"><input class="form__input-date" type="date" name=""><span class="form__span"><button class="form__button"><img src="/assets/img/arrow-down.svg" alt=""></button></span></div>
                         </form>
                     </div>
                     <div class="form__date-drop">
-                        <h3 class="form__title date-title">Date Dropdown</h3>
+                        <h3 class="form__title title date-title">Date Dropdown</h3>
                         <form action="">
                             <div class="form__date"><input class="form__input-date" type="date" name=""><span class="form__span"><button class="form__button"><img src="/assets/img/arrow-down.svg" alt=""></button></span></div>
                         </form>
                     </div>
                 </div>
+            </div>
+            <div class="form-elements__form">
+                <div class="form__text text">
+                    <h3 class="form__title title">Subscription text field</h3>
+                </div>
+                <form class="form-subscribe" action=""><input class="form__input" type="email" name="mail" placeholder="Email" requare><img class="form__arrow-right" src="/assets/img/arrow_forward.svg" alt=""></form>
+            </div>
+        </div>
+        <div class="form-elements__column-checkbox">
+            <div class="form-elements__checkbox">
+                <div class="checkbox__text text">
+                    <h3 class="checkbox__title title">Checkbox Buttons</h3>
+                </div>
+                <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox-smoke"><label class="checkbox__label" for="checkbox-smoke">Можно курить</label></div>
+                <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox-pets"><label class="checkbox__label" for="checkbox-pets">Можно с питомцами</label></div>
+                <div class="checkbox"><input class="checkbox__input" type="checkbox" id="checkbox-guests"><label class="checkbox__label" for="checkbox-guests">Можно пригласить гостей<br><span></span>(до 10 человек)</label></div>
             </div>
         </div>
     </div>
