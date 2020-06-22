@@ -1,59 +1,67 @@
 @font-face {
     font-family: "Montserrat-Regular";
     src: url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.eot'),
-    url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.woff') format('woff'),
-    url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.otf') format('otf'),
-    url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.ttf') format('ttf'),
-    url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.svg');
+        url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.woff') format('woff'),
+        url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.otf') format('otf'),
+        url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.ttf') format('ttf'),
+        url('/src/assets/fonts/Montserrat/MontserratRegular/Montserrat-Regular.svg');
 }
 
 @font-face {
     font-family: "Montserrat-Bold";
     src: url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.eot'),
-    url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.woff') format('woff'),
-    url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.otf') format('otf'),
-    url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.ttf') format('ttf'),
-    url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.svg');
+        url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.woff') format('woff'),
+        url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.otf') format('otf'),
+        url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.ttf') format('ttf'),
+        url('/src/assets/fonts/Montserrat/MontserratBold/Montserrat-Bold.svg');
 }
 
 @font-face {
     font-family: "Quicksand-Regular";
     src: url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.eot'),
-    url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.woff') format('woff'),
-    url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.otf') format('otf'),
-    url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.ttf') format('ttf'),
-    url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.svg');
+        url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.woff') format('woff'),
+        url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.otf') format('otf'),
+        url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.ttf') format('ttf'),
+        url('/src/assets/fonts/Quicksand/QuicksandRegular/Quicksand-Regular.svg');
 }
 
 @font-face {
     font-family: "Quicksand-Bold";
     src: url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.eot'),
-    url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.woff') format('woff'),
-    url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.otf') format('otf'),
-    url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.ttf') format('ttf'),
-    url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.svg');
+        url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.woff') format('woff'),
+        url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.otf') format('otf'),
+        url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.ttf') format('ttf'),
+        url('/src/assets/fonts/Quicksand/QuicksandBold/Quicksand-Bold.svg');
 }
 
 @font-face {
     font-family: "OpenSans-Regular";
     src: url('/src/assets/fonts/OpenSans/Regular/OpenSans.eot'),
-    url('/src/assets/fonts/OpenSans/Regular/OpenSans.svg') format('svg'),
-    url('/src/assets/fonts/OpenSans/Regular/OpenSans.ttf') format('ttf'),
-    url('/src/assets/fonts/OpenSans/Regular/OpenSans.woff') format('woff');
+        url('/src/assets/fonts/OpenSans/Regular/OpenSans.svg') format('svg'),
+        url('/src/assets/fonts/OpenSans/Regular/OpenSans.ttf') format('ttf'),
+        url('/src/assets/fonts/OpenSans/Regular/OpenSans.woff') format('woff');
 }
 
 @font-face {
     font-family: "OpenSans-Bold";
     src: url('/src/assets/fonts/OpenSans/Bold/OpenSans-Bold.eot'),
-    url('/src/assets/fonts/OpenSans/Bold/OpenSans-Bold.svg') format('svg'),
-    url('/src/assets/fonts/OpenSans/Bold/OpenSans-Bold.ttf') format('ttf'),
-    url('/src/assets/fonts/OpenSans/Bold/OpenSans-Bold.woff') format('woff');
+        url('/src/assets/fonts/OpenSans/Bold/OpenSans-Bold.svg') format('svg'),
+        url('/src/assets/fonts/OpenSans/Bold/OpenSans-Bold.ttf') format('ttf'),
+        url('/src/assets/fonts/OpenSans/Bold/OpenSans-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: "OpenSans-Extrabold";
     src: url('/src/assets/fonts/OpenSans/Extrabold/OpenSans-Extrabold.eot'),
-    url('/src/assets/fonts/OpenSans/Extrabold/OpenSans-Extrabold.svg') format('svg'),
-    url('/src/assets/fonts/OpenSans/Extrabold/OpenSans-Extrabold.ttf') format('ttf'),
-    url('/src/assets/fonts/OpenSans/Extrabold/OpenSans-Extrabold.woff') format('woff');
+        url('/src/assets/fonts/OpenSans/Extrabold/OpenSans-Extrabold.svg') format('svg'),
+        url('/src/assets/fonts/OpenSans/Extrabold/OpenSans-Extrabold.ttf') format('ttf'),
+        url('/src/assets/fonts/OpenSans/Extrabold/OpenSans-Extrabold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Iconmoon";
+    src: url('/src/assets/fonts/Iconmoon/icomoon.eot'),
+        url('/src/assets/fonts/Iconmoon/icomoon.woff') format('woff'),
+        url('/src/assets/fonts/Iconmoon/icomoon.ttf') format('ttf'),
+        url('/src/assets/fonts/Iconmoon/icomoon.svg');
 }
