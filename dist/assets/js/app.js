@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9829,6 +9829,35 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+/*function isClick() {
+    const btn = document.querySelector('.like__button');
+    let like = true,
+        likeCount = document.querySelector('.like__count').innerHTML;
+
+    btn.addEventListener('click', isClick)
+
+    if (likeCount = like) {
+        ++likeCount
+    } else {
+        --likeCount
+    }
+};*/
+var likeClick = document.getElementsByClassName('.like__button');
+var likeCount = document.getElementsByClassName('.like__count');
+var like = true;
+
+var likeButtonClick = function likeButtonClick() {
+  if (likeCount == like) {
+    ++likeCount;
+  } else {
+    --likeCount;
+  }
+};
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {function getPasteEvent() {
@@ -10157,11 +10186,11 @@ $.fn.extend({
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(1)))
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(0);
-            var content = __webpack_require__(4);
+            var content = __webpack_require__(5);
 
             content = content.__esModule ? content.default : content;
 
@@ -10179,49 +10208,19 @@ var update = api(content, options);
 
 
 module.exports = content.locals || {};
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var api = __webpack_require__(0);
-            var content = __webpack_require__(6);
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
 var api = __webpack_require__(0);
-            var content = __webpack_require__(8);
+            var content = __webpack_require__(7);
 
             content = content.__esModule ? content.default : content;
 
@@ -10241,18 +10240,54 @@ var update = api(content, options);
 module.exports = content.locals || {};
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(0);
+            var content = __webpack_require__(9);
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
 /* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony import */ var _scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
+/* harmony import */ var _pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2__);
+
+
 
 $(document).ready(function () {
   $(".form__input_mask").mask("99.99.9999", {
@@ -10262,11 +10297,11 @@ $(document).ready(function () {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(1)))
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(0);
-            var content = __webpack_require__(11);
+            var content = __webpack_require__(12);
 
             content = content.__esModule ? content.default : content;
 
@@ -10286,13 +10321,25 @@ var update = api(content, options);
 module.exports = content.locals || {};
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 12 */
+/* 13 */
+/***/ (function(module, exports) {
+
+var placeholder = document.querySelector('.dropdown-guests__placeholder');
+var options = document.querySelector('.dropdown-guests__options');
+
+placeholder.onclick = function () {
+  options.style.maxHeight = options.style.maxHeight == '131px' ? '0px' : '131px';
+  options.style.opacity = options.style.opacity == '1' ? '0' : '1';
+};
+
+/***/ }),
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10304,27 +10351,31 @@ var jquery = __webpack_require__(1);
 var jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);
 
 // EXTERNAL MODULE: ./src/pages/pug/includes/inputs/mask-input/jquery.maskedinput.js
-var jquery_maskedinput = __webpack_require__(2);
+var jquery_maskedinput = __webpack_require__(3);
+
+// EXTERNAL MODULE: ./src/pages/pug/includes/inputs/like-button/like-button.js
+var like_button = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./src/pages/scss/Cards.scss
-var Cards = __webpack_require__(3);
+var Cards = __webpack_require__(4);
 
 // CONCATENATED MODULE: ./src/pages/js/Cards.js
 
 // EXTERNAL MODULE: ./src/pages/scss/Colors&type.scss
-var Colors_type = __webpack_require__(5);
+var Colors_type = __webpack_require__(6);
 
 // CONCATENATED MODULE: ./src/pages/js/Colors&type.js
 
 // EXTERNAL MODULE: ./src/pages/scss/Headers&footers.scss
-var Headers_footers = __webpack_require__(7);
+var Headers_footers = __webpack_require__(8);
 
 // CONCATENATED MODULE: ./src/pages/js/Headers&footers.js
 
 // EXTERNAL MODULE: ./src/pages/js/FormElements.js
-var FormElements = __webpack_require__(9);
+var FormElements = __webpack_require__(10);
 
 // CONCATENATED MODULE: ./src/index.js
+
 
 
 

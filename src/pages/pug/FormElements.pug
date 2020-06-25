@@ -20,7 +20,7 @@ block body
                 .form__text.text
                     h3.form__title.title Dropdown
                     p.form__subtitle.subtitle Default
-                include ./includes/dropdowns/dropdown-guests__default.pug
+                include ./includes/dropdowns/dropdown-guests__default/dropdown-guests__default.pug
             .form-elements__form
                 .form__text.text.mask-input__block
                     h3.form__title.title Masked text field
@@ -51,6 +51,12 @@ block body
                 include ./includes/inputs/radio-input/radio-input.pug
             .form-elements__toggle
                 .toggle__text.text
-                    h3.radio__title.title Toggle
+                    h3.toggle__title.title Toggle
                 include ./includes/inputs/toggle-input/toggle-input.pug
                 include ./includes/inputs/toggle-input/toggle-input.pug
+            .form-elements__like
+                .like__text.text
+                    h3.like__title.title like button
+                include ./includes/inputs/like-button/like-button.pug
+                    block likes
+                        |   2

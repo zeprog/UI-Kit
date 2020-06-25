@@ -1,13 +1,14 @@
 @import '../../utils/vars.scss';
 @import '../pug/includes/inputs/text-default/input-text__default.scss';
 @import '../pug/includes/inputs/text-active/input-text__active.scss';
-@import '../pug/includes/dropdowns/dropdown-guests__default.scss';
+@import '../pug/includes/dropdowns/dropdown-guests__default/dropdown-guests__default.scss';
 @import '../pug/includes/inputs//mask-input/input-text__mask.scss';
 @import '../pug/includes/dropdowns/date-drop/input-date.scss';
 @import '../pug/includes/inputs/subscribe-input/subscribe-input.scss';
 @import '../pug/includes/inputs/checkbox-input/checkbox-input.scss';
 @import '../pug/includes/inputs/radio-input/radio-input.scss';
 @import '../pug/includes/inputs/toggle-input/toggle-input.scss';
+@import '../pug/includes/inputs/like-button/like-button.scss';
 
 .form-elements {
     width: 1160px;
@@ -27,6 +28,10 @@
         display: flex;
         justify-content: space-between;
         font-family: $mainFont sans-serif;
+    }
+
+    .dropdown-guests__box {
+        margin-top: 5px;
     }
 
     .form__date-block {
@@ -87,6 +92,10 @@
     }
 
     .form-elements__toggle {
-        margin-bottom: 40px;
+        margin-bottom: 45px;
+    }
+
+    .like__text {
+        margin-bottom: 14px;
     }
 }

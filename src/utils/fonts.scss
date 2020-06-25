@@ -63,5 +63,32 @@
     src: url('/src/assets/fonts/Iconmoon/icomoon.eot'),
         url('/src/assets/fonts/Iconmoon/icomoon.woff') format('woff'),
         url('/src/assets/fonts/Iconmoon/icomoon.ttf') format('ttf'),
-        url('/src/assets/fonts/Iconmoon/icomoon.svg');
+        url('/src/assets/fonts/Iconmoon/icomoon.svg') format('svg');
 }
+
+/*font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    //
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-favorite_border {
+    &:before {
+        content: "\e900";
+    }
+}*/
