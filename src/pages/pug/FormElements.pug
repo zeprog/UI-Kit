@@ -53,10 +53,16 @@ block body
                 .toggle__text.text
                     h3.toggle__title.title Toggle
                 include ./includes/inputs/toggle-input/toggle-input.pug
+                +toggle('#toggle__input')
                 include ./includes/inputs/toggle-input/toggle-input.pug
+                +toggle('#toggle__input2')
             .form-elements__like
                 .like__text.text
                     h3.like__title.title like button
-                include ./includes/inputs/like-button/like-button.pug
-                    block likes
-                        |   2
+                .like__buttons-block
+                    .like__button-block
+                        include ./includes/inputs/like-button/like-button.pug
+                        +like-button('#like__button', '2', '#like__form')
+                    .like__button-block2
+                        include ./includes/inputs/like-button/like-button.pug
+                        +like-button('#like__button2', '11')

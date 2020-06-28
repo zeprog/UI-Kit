@@ -1,3 +1,4 @@
-.toggle
-    input(type="checkbox")#toggle__input.toggle__input
-    label(for="toggle__input").toggle__label Получать спецпредложения
+mixin toggle(id)
+    .toggle
+        input(type="checkbox", id=id).toggle__input
+        label(for=id).toggle__label Получать спецпредложения

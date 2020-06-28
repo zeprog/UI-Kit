@@ -98,4 +98,12 @@
     .like__text {
         margin-bottom: 14px;
     }
+
+    .like__buttons-block {
+        display: flex;
+
+        .like__button-block {
+            margin-right: 10px;
+        }
+    }
 }
