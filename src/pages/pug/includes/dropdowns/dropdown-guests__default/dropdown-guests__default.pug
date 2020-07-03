@@ -1,32 +1,29 @@
-//.dropdown-guests
-    p.dropdown-guests__placeholder Сколько гостей
-    object(data="./assets/img/arrow-down.svg", type="").dropdown-guests__arrow
-
 .dropdown-guests__box
     .dropdown-guests__selected-box
+        .dropdown-guests__placeholder Сколько гостей
+            object(data="./assets/img/arrow-down.svg", type="").dropdown-guests__arrow
         .dropdown-guests__options
             .dropdown-guests__select
                 h3.dropdown-guests__title взрослые
                 .dropdown-guests__value
                     span.value_down -
-                    input(type="text" value="0").value__input
+                    input(type="number" value="0").value__input.input-adult
                     span.value_up +
             .dropdown-guests__select
                 h3.dropdown-guests__title дети
                 .dropdown-guests__value
                     span.value_down -
-                    input(type="text" value="0").value__input
+                    input(type="number" value="0").value__input.input-child
                     span.value_up +
             .dropdown-guests__select
                 h3.dropdown-guests__title младенцы
                 .dropdown-guests__value
                     span.value_down -
-                    input(type="text" value="0").value__input
+                    input(type="number" value="0").value__input.input-baby
                     span.value_up +
             .dropdown-guests__buttons
                 .dropdown-guests__btn.button-clear
                     h3 очистить
                 .dropdown-guests__btn.button-ok
                     h3 применить
-        .dropdown-guests__placeholder Сколько гостей
-            object(data="./assets/img/arrow-down.svg", type="").dropdown-guests__arrow
+        
