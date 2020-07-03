@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10290,6 +10290,9 @@ module.exports = content.locals || {};
 /* harmony import */ var _pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
 /* harmony import */ var _pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _pug_includes_inputs_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _pug_includes_inputs_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_inputs_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -10370,6 +10373,73 @@ btnNum.onclick = function () {
 
 /***/ }),
 /* 14 */
+/***/ (function(module, exports) {
+
+var rating = document.querySelector('.rating'),
+    ratingItem = document.querySelectorAll('.rating_item');
+
+rating.onclick = function (e) {
+  var target = e.target;
+
+  if (target.classList.contains('rating_item')) {
+    removeClass(ratingItem, 'current_active');
+    target.classList.add('active', 'current_active');
+  }
+};
+
+rating.onmouseover = function (e) {
+  var target = e.target;
+
+  if (target.classList.contains('rating_item')) {
+    removeClass(ratingItem, 'active');
+    target.classList.add('active');
+    mouseOverActiveClass(ratingItem);
+  }
+};
+
+rating.onmouseout = function () {
+  addClass(ratingItem, 'active');
+  mouseOutActiveClass(ratingItem);
+};
+
+function removeClass(arr) {
+  for (var i = 0, iLen = arr.length; i < iLen; i++) {
+    for (var j = 1; j < arguments.length; j++) {
+      ratingItem[i].classList.remove(arguments[j]);
+    }
+  }
+}
+
+function addClass(arr) {
+  for (var i = 0, iLen = arr.length; i < iLen; i++) {
+    for (var j = 1; j < arguments.length; j++) {
+      ratingItem[i].classList.add(arguments[j]);
+    }
+  }
+}
+
+function mouseOverActiveClass(arr) {
+  for (var i = 0, iLen = arr.length; i < iLen; i++) {
+    if (arr[i].classList.contains('active')) {
+      break;
+    } else {
+      arr[i].classList.add('active');
+    }
+  }
+}
+
+function mouseOutActiveClass(arr) {
+  for (var i = arr.length - 1; i >= 0; i--) {
+    if (arr[i].classList.contains('current_active')) {
+      break;
+    } else {
+      arr[i].classList.remove('active');
+    }
+  }
+}
+
+/***/ }),
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

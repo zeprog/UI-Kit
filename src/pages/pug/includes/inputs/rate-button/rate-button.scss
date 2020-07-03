@@ -1,0 +1,33 @@
+/*.rate_background {
+    position: relative;
+    width: 100px;
+    height: 32px;
+    background: url('/assets/img/star_border.svg') repeat-x;
+    cursor: pointer;
+
+}
+
+.rate_bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 32px;
+    background: url('/assets/img/star.svg') repeat-x;
+}*/
+
+.rating {
+    display: flex;
+
+    .rating_item {
+        width: 22px;
+        height: 22px;
+        background: url('/assets/img/star_border.svg') no-repeat;
+        cursor: pointer;
+    }
+
+    .rating_item.active {
+        width: 22px;
+        height: 22px;
+        background: url('/assets/img/star.svg') no-repeat;
+    }
+}
