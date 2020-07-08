@@ -34,10 +34,12 @@ block body
                     .form__date-drop
                         h3.form__title.title.date-title Date Dropdown
                         include ./includes/dropdowns/date-drop/input-date.pug
-
-
             .form-elements__form
-                .form__text.text
+                .form__filter-text
+                    h3.form__title.title.filter-title filter date dropdown
+                include ./includes/dropdowns/filter-date-drop/filter-date-drop.pug
+            .form-elements__form
+                .form__subscription-text.text
                     h3.form__title.title Subscription text field
                 include ./includes/inputs/subscribe-input/subscribe-input.pug
         .form-elements__column-checkbox
@@ -70,4 +72,5 @@ block body
                 .rate__text.text
                     h3.rate__title.title rate button
                 .rate__buttons-block
+                    include ./includes/inputs/rate-button/rate-button.pug
                     include ./includes/inputs/rate-button/rate-button.pug

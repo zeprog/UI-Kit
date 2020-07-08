@@ -10,6 +10,7 @@
 @import '../pug/includes/inputs/toggle-input/toggle-input.scss';
 @import '../pug/includes/inputs/like-button/like-button.scss';
 @import '../pug/includes/inputs/rate-button/rate-button.scss';
+@import '../pug/includes/dropdowns/filter-date-drop/filter-date-drop.scss';
 
 .form-elements {
     width: 1160px;
@@ -44,6 +45,14 @@
         .form__date-drop {
             width: 143px;
         }
+    }
+
+    .form__filter-text {
+        margin-top: 20px;
+    }
+
+    .form__subscription-text {
+        margin-top: 20px;
     }
 }
 
@@ -96,6 +105,10 @@
         margin-bottom: 45px;
     }
 
+    .form-elements__like {
+        margin-bottom: 40px;
+    }
+
     .like__text {
         margin-bottom: 14px;
     }
@@ -106,5 +119,11 @@
         .like__button-block {
             margin-right: 10px;
         }
+    }
+
+    .rate__buttons-block {
+        display: flex;
+        justify-content: space-between;
+        width: 255px;
     }
 }

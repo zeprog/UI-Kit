@@ -1,0 +1,51 @@
+.filter-date-dropdown {
+    width: 253px;
+    border: 1px solid #C7C7CF;
+    height: 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+    .filter-date-dropdown__dates {
+        display: flex;
+        align-items: center;
+        height: 37px;
+
+        .filter-date-dropdown__checkin-date {
+            display: block;
+
+            .filter-date-dropdown__checkin {
+                padding: 0 10px 0 12px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    height: 1px;
+                    background: $mainColor;
+                    width: 4px;
+                    top: 50%;
+                    margin-left: 5px;
+                    z-index: 2;
+                }
+            }
+        }
+
+        .filter-date-dropdown__departure {
+            padding-left: 3px;
+        }
+
+        .filter-date-dropdown__text {
+            color: $mainColor;
+            font-family: $mainFont sans-serif;
+            font-size: 13.5px;
+        }
+    }
+
+    .filter-date-dropdown__arrow {
+        padding: 10px 14px;
+    }
+}
