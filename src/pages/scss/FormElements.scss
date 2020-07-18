@@ -11,6 +11,8 @@
 @import '../pug/includes/inputs/like-button/like-button.scss';
 @import '../pug/includes/inputs/rate-button/rate-button.scss';
 @import '../pug/includes/dropdowns/filter-date-drop/filter-date-drop.scss';
+@import '../pug/includes/sliders/range-slider/range-slider.scss';
+
 
 .form-elements {
     width: 1160px;
@@ -26,11 +28,7 @@
     margin: 54px 0 0 39px;
     width: 303px;
 
-    .text {
-        display: flex;
-        justify-content: space-between;
-        font-family: $mainFont sans-serif;
-    }
+
 
     .dropdown-guests__box {
         margin-top: 5px;
@@ -60,6 +58,12 @@
     margin-top: 3px;
 }
 
+.text {
+    display: flex;
+    justify-content: space-between;
+    font-family: $mainFont sans-serif;
+}
+
 .title {
     font-size: 11px;
     letter-spacing: 0.2px;
@@ -80,6 +84,7 @@
 }
 
 .subtitle {
+    font-size: 11px;
     position: relative;
     top: 0.2px;
     color: $mainColor;
@@ -125,5 +130,20 @@
         display: flex;
         justify-content: space-between;
         width: 255px;
+    }
+}
+
+.form-elements__column-buttons {
+    margin: 54px 0 0 120px;
+    width: 310px;
+
+    .range__text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+
+        .range__subtitle {
+            margin-right: 60px;
+        }
     }
 }

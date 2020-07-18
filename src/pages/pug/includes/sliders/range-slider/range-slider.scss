@@ -1,0 +1,55 @@
+.range {
+    width: 250px;
+    height: 6px;
+    border: 1px solid #c7c7cf;
+    border-radius: 3px;
+    position: relative;
+
+    .range__line {
+        position: absolute;
+        height: 6px;
+        width: 90px;
+        background: rgba(111, 207, 151, 1);
+        background: -moz-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(111, 207, 151, 1)), color-stop(100%, rgba(102, 210, 234, 1)));
+        background: -webkit-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: -o-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: linear-gradient(to bottom, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6fcf97', endColorstr='#66d2ea', GradientType=0);
+        border-radius: 3px;
+        top: -1px;
+        margin-left: 65px;
+    }
+
+    .range__button_1,
+    .range__button_2 {
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        background: rgba(111, 207, 151, 1);
+        background: -moz-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(111, 207, 151, 1)), color-stop(100%, rgba(102, 210, 234, 1)));
+        background: -webkit-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: -o-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        background: linear-gradient(to bottom, rgba(111, 207, 151, 1) 0%, rgba(102, 210, 234, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6fcf97', endColorstr='#66d2ea', GradientType=0);
+        border-radius: 50%;
+        border: 2px solid #fff;
+        outline: none;
+        cursor: pointer;
+
+    }
+
+    .range__button_1 {
+        top: -5px;
+        left: -3px;
+        margin-left: 65px;
+    }
+
+    .range__button_2 {
+        margin-left: 150px;
+        top: -5px
+    }
+}
