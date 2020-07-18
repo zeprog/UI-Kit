@@ -15,3 +15,4 @@ mixin like-button(id, num, idform)
             use(xlink:href="#like__icon_default")
         input(type="checkbox", id=id).like__button
         label(for=id, data-like='like', data-counter).like__count= num
+        label(for=id, data-like='like').like__count= num

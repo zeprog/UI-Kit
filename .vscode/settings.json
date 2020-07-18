@@ -1,0 +1,34 @@
+{
+    "editor.formatOnSave": true,
+    "beautify.config": {
+        "beautify.language": {
+            "js": [
+                "js",
+                "json",
+                "cfc"
+            ],
+            "css": [
+                "css",
+                "scss"
+            ],
+            "html": [
+                "htm",
+                "html",
+                "cfml",
+                "cfm"
+            ]
+        },
+        "html": {
+            "allowed_file_extensions": [
+                "htm",
+                "html",
+                "xhtml",
+                "shtml",
+                "xml",
+                "svg",
+                "cfm",
+                "cfml"
+            ]
+        }
+    }
+}

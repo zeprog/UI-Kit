@@ -1,0 +1,26 @@
+extends ./layouts/MainTemplate.pug
+block title
+    |    Cards
+block body
+    .cards__background
+    .logo
+        img.logo__icon(src="assets/img/Group.svg", alt="") 
+    .cards__body  
+        .card__block
+            .search__block
+                .search__content
+                    .search__title
+                        h2 Найдём номера под ваши пожелания
+                    .search__vars
+                        .vars__coming
+                            .vars__title.title
+                                h3 Прибытие
+                            include ./includes/dropdowns/date-drop/input-date.pug
+                        .vars__depart
+                            .vars__title.title
+                                h3 Выезд
+                            include ./includes/dropdowns/date-drop/input-date.pug
+                    .search__guests
+                        .guests__title.title
+                            h3 Гости
+                        include ./includes/dropdowns/dropdown-guests__default/dropdown-guests__default.pug

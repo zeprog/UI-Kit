@@ -1,0 +1,45 @@
+extends ./layouts/MainTemplate.pug
+block title
+	|    Colors&type
+block body
+	.logo
+		img.logo__icon(src="assets/img/Group.svg", alt="")
+	.colors-type
+		.colors
+			.colors__rectan.dark-blue
+			h2.colors__title Dark Shade 100%
+			p.colors__subtitle #1F2041
+			.colors__rectan.dark-blue_75
+			h2.colors__title Dark Shade 75%
+			p.colors__subtitle #1F2041
+			.colors__rectan.dark-blue_50
+			h2.colors__title Dark Shade 50%
+			p.colors__subtitle #1F2041
+			.colors__rectan.dark-blue_25
+			h2.colors__title Dark Shade 25%
+			p.colors__subtitle #1F2041
+			.colors__rectan.dark-blue_5
+			h2.colors__title Dark Shade 5%
+			p.colors__subtitle #1F2041
+			.colors__rectan.purple
+			h2.colors__title Purple
+			p.colors__subtitle #BC9CFF
+			.colors__rectan.green
+			h2.colors__title Green
+			p.colors__subtitle #6FCF97
+		.types
+			.types__block
+				h1.types__title.types__title_h1 H1
+				p.types__text.types__text_h1 This one is the sub-section or
+					|	widget title
+			.types__block
+				h2.types__title.types__title_h2 H2
+				p.types__text.types__text_h2 Next one is the item title inside
+					|	widgets
+			.types__block
+				h3.types__title.types__title_h3 H3
+				p.types__text.types__text_h3 This is a label or CTA text
+			.types__block
+				h3.types__title.types__title-body Body
+				p.types__text.types__body-text This is the body text which is used for most
+					|	<br>of the design, like paragraphs, lists, etc.

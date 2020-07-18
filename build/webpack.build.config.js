@@ -2,7 +2,10 @@ const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.config')
 const buildWebpackConfig = merge(baseWebpackConfig, {
     mode: 'production',
-    plugins: []
+    plugins: [],
+    optimization: {
+        minimize: false
+    }
 })
 
 module.exports = new Promise((resolve, reject) => {

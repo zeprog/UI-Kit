@@ -1,0 +1,21 @@
+.form {
+    margin-top: 5px;
+    border: 1px solid #D4D4DA;
+    border-radius: 4px;
+}
+
+.form__input {
+    padding: 12px 15px 11px 13px;
+    border-radius: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    color: #D5D5DB;
+    font-family: $mainFont sans-serif;
+    font-size: 13.5px;
+
+    &::placeholder {
+        color: #D5D5DB;
+    }
+}

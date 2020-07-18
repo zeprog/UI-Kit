@@ -1,0 +1,76 @@
+extends ./layouts/MainTemplate.pug
+block title
+    |    Form Elements
+block body
+    .logo
+        img.logo__icon(src="assets/img/Group.svg", alt="")
+    .form-elements
+        .form-elements__column-form
+            .form-elements__form
+                .form__text.text
+                    h3.form__title.title Text Field
+                    p.form__subtitle.subtitle-first Default
+                include ./includes/inputs/text-default/input-text__default
+            .form-elements__form
+                .form__text.text
+                    h3.form__title.title Text Field
+                    p.form__subtitle.subtitle Hover / Focus
+                include ./includes/inputs/text-active/input-text__active
+            .form-elements__form
+                .form__text.text
+                    h3.form__title.title Dropdown
+                    p.form__subtitle.subtitle Default
+                include ./includes/dropdowns/dropdown-guests__default/dropdown-guests__default.pug
+            .form-elements__form
+                .form__text.text.mask-input__block
+                    h3.form__title.title Masked text field
+                    p.form__subtitle.subtitle Default
+                include ./includes/inputs/mask-input/input-text__mask.pug
+            .form-elements__form
+                .form__date-block
+                    .form__date-drop
+                        h3.form__title.title.date-title Date Dropdown
+                        include ./includes/dropdowns/date-drop/input-date.pug
+                    .form__date-drop
+                        h3.form__title.title.date-title Date Dropdown
+                        include ./includes/dropdowns/date-drop/input-date.pug
+            .form-elements__form
+                .form__filter-text
+                    h3.form__title.title.filter-title filter date dropdown
+                include ./includes/dropdowns/filter-date-drop/filter-date-drop.pug
+            .form-elements__form
+                .form__subscription-text.text
+                    h3.form__title.title Subscription text field
+                include ./includes/inputs/subscribe-input/subscribe-input.pug
+        .form-elements__column-checkbox
+            .form-elements__checkbox
+                .checkbox__text.text
+                    h3.checkbox__title.title Checkbox Buttons
+                include ./includes/inputs/checkbox-input/checkbox-input.pug
+            .form-elements__radio
+                .radio__text.text
+                    h3.radio__title.title Radio Buttons
+                include ./includes/inputs/radio-input/radio-input.pug
+            .form-elements__toggle
+                .toggle__text.text
+                    h3.toggle__title.title Toggle
+                include ./includes/inputs/toggle-input/toggle-input.pug
+                +toggle('#toggle__input')
+                include ./includes/inputs/toggle-input/toggle-input.pug
+                +toggle('#toggle__input2')
+            .form-elements__like
+                .like__text.text
+                    h3.like__title.title like button
+                .like__buttons-block
+                    .like__button-block
+                        include ./includes/inputs/like-button/like-button.pug
+                        +like-button('#like__button', '2', '#like__form')
+                    .like__button-block2
+                        include ./includes/inputs/like-button/like-button.pug
+                        +like-button('#like__button2', '11')
+            .form-elements__rate
+                .rate__text.text
+                    h3.rate__title.title rate button
+                .rate__buttons-block
+                    include ./includes/inputs/rate-button/rate-button.pug
+                    include ./includes/inputs/rate-button/rate-button.pug

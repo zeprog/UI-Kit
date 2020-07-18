@@ -1,0 +1,20 @@
+.form_mask {
+    border: 1px solid #C7C7CF;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 5px;
+
+    .form__input_mask {
+        padding: 12px 15px 11px 13px;
+        width: 100%;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-family: $mainFont sans-serif;
+        font-size: 13.5px;
+        color: $mainColor;
+        opacity: 0.75;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+    }
+}

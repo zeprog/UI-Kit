@@ -1,0 +1,104 @@
+.like {
+    position: relative;
+    display: flex;
+
+    .like__img {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 4px;
+        //left: 3px;
+        z-index: 2;
+        pointer-events: none;
+        background: transparent;
+    }
+
+    .like__background-before {
+        background: rgba(187, 156, 255, 1);
+        background: -moz-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(187, 156, 255, 1)), color-stop(100%, rgba(139, 164, 249, 1)));
+        background: -webkit-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: -o-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        background: linear-gradient(to bottom, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb9cff', endColorstr='#8ba4f9', GradientType=0);
+        width: 38px;
+        height: 18px;
+        border-radius: 10px;
+    }
+
+    .like__background-after {
+        background: #fff;
+        width: 36px;
+        height: 16px;
+        border-radius: 10px;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+
+    .like__button {
+        appearance: none;
+        position: absolute;
+
+    }
+
+    .like__count {
+        font-family: $mainFont sans-serif;
+        color: #C7C7CF;
+        font-size: 9px;
+        position: absolute;
+        z-index: 2;
+        //padding: 2px 11px 3px 20px;
+        top: 3px;
+        left: 23px;
+        border-radius: 10px;
+        display: flex;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 16px;
+            //padding: 13px 16px 3px 20px;
+            border: 1px solid #cbcbcf;
+            border-radius: 10px;
+            position: absolute;
+            top: -3px;
+            left: -23px;
+            z-index: 1;
+            background: transparent;
+        }
+    }
+
+    .like__icon_default {
+        fill: #C7C7CF;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        display: block;
+        top: 4px;
+        left: 4px;
+        opacity: 1;
+    }
+
+    .like__icon_active {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        display: block;
+        top: 4px;
+        left: 4px;
+        opacity: 0;
+    }
+
+    .like__button:checked+.like__count {
+        color: #BC9CFF;
+
+    }
+
+    .like__button:checked+.like__count::after {
+        border: none;
+    }
+}
