@@ -5,22 +5,22 @@
         .dropdown-guests__options
             .dropdown-guests__select
                 h3.dropdown-guests__title взрослые
-                .dropdown-guests__value
-                    span.value_down -
-                    input(type="number" value="0").value__input.input-adult
-                    span.value_up +
+                
+                //span(data-quantity="minus" data-field="quantity").value_down.down-adult.increment -
+                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input.input-adult#adult
+                //span(data-quantity="plus" data-field="quantity").value_up.increment +
             .dropdown-guests__select
                 h3.dropdown-guests__title дети
-                .dropdown-guests__value
-                    span.value_down -
-                    input(type="number" value="0").value__input.input-child
-                    span.value_up +
+                
+                //span(data-quantity="minus" data-field="quantity").value_down.increment -
+                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input.input-child#child
+                //span(data-quantity="plus" data-field="quantity").value_up.increment +
             .dropdown-guests__select
                 h3.dropdown-guests__title младенцы
-                .dropdown-guests__value
-                    span.value_down -
-                    input(type="number" value="0").value__input.input-baby
-                    span.value_up +
+                
+                //span(data-quantity="minus" data-field="quantity").value_down.increment -
+                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input.input-baby#baby
+                //span(data-quantity="plus" data-field="quantity").value_up.increment +
             .dropdown-guests__buttons
                 .dropdown-guests__btn.button-clear
                     h3 очистить

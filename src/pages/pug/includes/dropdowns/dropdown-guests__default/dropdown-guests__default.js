@@ -1,31 +1,96 @@
 let placeholder = document.querySelector('.dropdown-guests__placeholder');
 let options = document.querySelector('.dropdown-guests__options');
-let btnNum = document.querySelector('span');
-let inputAdult = document.querySelector('.input-adult');
-let inputChild = document.querySelector('.input-child');
-let inputBaby = document.querySelector('.input-baby');
-let btnClear = document.querySelector('.button-clear');
 
 
 placeholder.onclick = function () {
-    //options.style.maxHeight = options.style.maxHeight == '131px' ? '0px' : '131px';
-    options.style.opacity = options.style.opacity == '1' ? '0' : '1';
+    placeholder.style.borderBottomLeftRadius = placeholder.style.borderBottomLeftRadius == '0px' ? '4px' : '0px';
+    placeholder.style.borderBottomRightRadius = placeholder.style.borderBottomRightRadius == '0px' ? '4px' : '0px';
+    options.style.display = options.style.display == 'block' ? 'none' : 'block';
 };
 
 (function ($) {
-    $('.dropdown-guests__value').on('click', 'span', function () {
-        var input = $('input', this.parentNode),
-            val = +input.val() || 0;
-        input.val(val += this.className == 'value_down' ? val > 0 ? -1 : 0 : 1);
-    });
+    $.fn.numberCount = function (countOptions) {
+
+        let options = {
+            'containerTag': 'div',
+            'containerClass': 'dropdown-guests__value',
+            'minus': 'value_down',
+            'plus': 'value_up',
+            'btnTag': 'span'
+        };
+
+        options = $.extend(true, options, countOptions);
+
+        let input = this;
+        input.wrap('<' + options.containerTag + ' class=' + options.containerClass + '>');
+
+        let inputParent = input.parent();
+        inputParent.prepend('<' + options.btnTag + ' class=' + options.minus + '>');
+        let minus = inputParent.find('.' + options.minus);
+        inputParent.append('<' + options.btnTag + ' class=' + options.plus + '>');
+        let plus = inputParent.find('.' + options.plus);
+        let min = input.attr('min');
+        let max = input.attr('max');
+        let btnClear = $('.button-clear');
+        let step = +input.attr('step');
+
+        if (+input.val() <= +min) {
+            minus.addClass('disabled');
+        }
+
+        /*if (+input.val() > +min) {
+            btnClear.show();
+        }*/
+
+        minus.click(function () {
+            let input = $(this).parent().find('input');
+            let inputValue = input.val();
+
+
+            if (+inputValue > +min) {
+                input.val(+inputValue - 1);
+
+                if (+input.val() === +min) {
+                    input.prev('.' + options.minus).addClass('disabled');
+                    btnClear.hide();
+                }
+                if (input.next('.' + options.plus).hasClass('disabled')) {
+                    input.next('.' + options.plus).removeClass('disabled')
+                }
+            } else if (!min) {
+                input.val(+inputValue - 1);
+            }
+        });
+
+        plus.click(function () {
+            let input = $('input', this.parentNode);
+            let inputValue = +input.val();
+
+            if (+inputValue < +max) {
+                input.val(+inputValue + 1);
+                btnClear.show();
+                if (+input.val() === +max) {
+
+                    input.next('.' + options.plus).addClass('disabled');
+
+                };
+
+                if (input.prev('.' + options.minus).hasClass('disabled')) {
+
+                    input.prev('.' + options.minus).removeClass('disabled')
+
+                };
+            } else if (!max) {
+                input.val(+inputValue + 1);
+            }
+        });
+    }
+
 }(jQuery));
 
-btnNum.onclick = function () {
-    if (inputAdult == 0 && inputChild == 0 && inputBaby == 0) {
-        btnClear.style.opacity = '0';
-        btnClear.style.cursor = 'default';
-    } else if (inputAdult > 0 || inputChild == 0 || inputBaby == 0) {
-        btnClear.style.opacity = '1';
-        btnClear.style.cursor = 'pointer';
-    };
-};
+
+$('input').each(function () {
+
+    $(this).numberCount();
+
+});

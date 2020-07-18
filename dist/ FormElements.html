@@ -36,16 +36,13 @@
                         <div class="dropdown-guests__placeholder">Сколько гостей<object class="dropdown-guests__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
                         <div class="dropdown-guests__options">
                             <div class="dropdown-guests__select">
-                                <h3 class="dropdown-guests__title">взрослые</h3>
-                                <div class="dropdown-guests__value"><span class="value_down">-</span><input class="value__input input-adult" type="number" value="0"><span class="value_up">+</span></div>
+                                <h3 class="dropdown-guests__title">взрослые</h3><input class="value__input input-adult" type="number" value="0" name="quantity" min="0" max="10" step="1" id="adult">
                             </div>
                             <div class="dropdown-guests__select">
-                                <h3 class="dropdown-guests__title">дети</h3>
-                                <div class="dropdown-guests__value"><span class="value_down">-</span><input class="value__input input-child" type="number" value="0"><span class="value_up">+</span></div>
+                                <h3 class="dropdown-guests__title">дети</h3><input class="value__input input-child" type="number" value="0" name="quantity" min="0" max="10" step="1" id="child">
                             </div>
                             <div class="dropdown-guests__select">
-                                <h3 class="dropdown-guests__title">младенцы</h3>
-                                <div class="dropdown-guests__value"><span class="value_down">-</span><input class="value__input input-baby" type="number" value="0"><span class="value_up">+</span></div>
+                                <h3 class="dropdown-guests__title">младенцы</h3><input class="value__input input-baby" type="number" value="0" name="quantity" min="0" max="10" step="1" id="baby">
                             </div>
                             <div class="dropdown-guests__buttons">
                                 <div class="dropdown-guests__btn button-clear">
@@ -149,7 +146,7 @@
                                 </symbol>
                             </svg><svg class="like__icon_default">
                                 <use xlink:href="#like__icon_default"></use>
-                            </svg><input class="like__button" type="checkbox" id="#like__button"><label class="like__count" for="#like__button" data-like="like">2</label>
+                            </svg><input class="like__button" type="checkbox" id="#like__button"><label class="like__count" for="#like__button" data-like="like" data-counter>2</label>
                         </form>
                     </div>
                     <div class="like__button-block2">
@@ -167,7 +164,7 @@
                                 </symbol>
                             </svg><svg class="like__icon_default">
                                 <use xlink:href="#like__icon_default"></use>
-                            </svg><input class="like__button" type="checkbox" id="#like__button2"><label class="like__count" for="#like__button2" data-like="like">11</label>
+                            </svg><input class="like__button" type="checkbox" id="#like__button2"><label class="like__count" for="#like__button2" data-like="like" data-counter>11</label>
                         </form>
                     </div>
                 </div>
