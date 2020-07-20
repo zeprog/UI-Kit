@@ -122,7 +122,24 @@
             padding: 10px 10px 10px 13px;
         }
 
-        .dropdown-guests__btn {
+        .button-clear {
+            border: none;
+            font-size: 11px;
+            letter-spacing: 0.2px;
+            color: $mainColor;
+            opacity: 0.5;
+            text-transform: uppercase;
+            font-family: $mainFont sans-serif;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .button-clear_hide-show {
+            display: none;
+            cursor: default;
+        }
+
+        .button-ok {
             border: none;
             font-size: 11px;
             letter-spacing: 0.2px;
@@ -130,17 +147,7 @@
             text-transform: uppercase;
             font-family: $mainFont sans-serif;
             outline: none;
-        }
-
-        .button-clear {
-            float: left;
-            display: none;
-            cursor: default;
-        }
-
-        .button-ok {
             cursor: pointer;
-            float: right;
         }
     }
 

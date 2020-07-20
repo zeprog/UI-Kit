@@ -12,7 +12,11 @@
 @import '../pug/includes/inputs/rate-button/rate-button.scss';
 @import '../pug/includes/dropdowns/filter-date-drop/filter-date-drop.scss';
 @import '../pug/includes/sliders/range-slider/range-slider.scss';
-
+@import '../pug/includes/buttons/button-white_default/button-white_default.scss';
+@import '../pug/includes/buttons/button-white_active/button-white_active.scss';
+@import '../pug/includes/buttons/button-gradient_default/button-gradient_default.scss';
+@import '../pug/includes/buttons/buttons-gradient_active/buttons-gradient_active.scss';
+@import '../pug/includes/buttons/buttons-text/buttons-text.scss';
 
 .form-elements {
     width: 1160px;
@@ -137,13 +141,47 @@
     margin: 54px 0 0 120px;
     width: 310px;
 
-    .range__text {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 22px;
+    .form-elements__range-slider {
+        .range__text {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 22px;
 
-        .range__subtitle {
-            margin-right: 60px;
+            .range__subtitle {
+                margin-right: 60px;
+            }
         }
     }
+
+    .form-elements__buttons {
+        .buttons__text {
+            margin: 42px 0 20px 0;
+        }
+
+        .buttons {
+            .buttons-gradient {
+                width: 220px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            .buttons-white {
+                width: 220px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+            }
+
+            .button-text {
+                display: flex;
+                margin-bottom: 15px;
+
+                .button-text_night {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
 }

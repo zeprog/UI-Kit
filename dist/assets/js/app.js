@@ -9924,7 +9924,7 @@ placeholder.onclick = function () {
       'btnTag': 'span'
     };
     options = $.extend(true, options, countOptions);
-    var input = this;
+    var input = $(this);
     input.wrap('<' + options.containerTag + ' class=' + options.containerClass + '>');
     var inputParent = input.parent();
     inputParent.prepend('<' + options.btnTag + ' class=' + options.minus + '>');
@@ -9989,7 +9989,7 @@ placeholder.onclick = function () {
   };
 })(jQuery);
 
-$('input').each(function () {
+$('.value__input').each(function () {
   $(this).numberCount();
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(0), __webpack_require__(0)))

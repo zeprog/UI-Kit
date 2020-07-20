@@ -1,0 +1,27 @@
+.button-night {
+    border: none;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    color: $mainColor;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-family: $mainFont sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-clear_hide-show {
+    display: none;
+    cursor: default;
+}
+
+.button-light {
+    border: none;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    color: #BC9CFF;
+    text-transform: uppercase;
+    font-family: $mainFont sans-serif;
+    outline: none;
+    cursor: pointer;
+}

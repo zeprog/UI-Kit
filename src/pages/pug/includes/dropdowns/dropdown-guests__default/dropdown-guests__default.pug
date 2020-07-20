@@ -5,24 +5,15 @@
         .dropdown-guests__options
             .dropdown-guests__select
                 h3.dropdown-guests__title взрослые
-                
-                //span(data-quantity="minus" data-field="quantity").value_down.down-adult.increment -
-                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input.input-adult#adult
-                //span(data-quantity="plus" data-field="quantity").value_up.increment +
+                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
             .dropdown-guests__select
                 h3.dropdown-guests__title дети
-                
-                //span(data-quantity="minus" data-field="quantity").value_down.increment -
-                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input.input-child#child
-                //span(data-quantity="plus" data-field="quantity").value_up.increment +
+                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
             .dropdown-guests__select
                 h3.dropdown-guests__title младенцы
-                
-                //span(data-quantity="minus" data-field="quantity").value_down.increment -
-                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input.input-baby#baby
-                //span(data-quantity="plus" data-field="quantity").value_up.increment +
+                input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
             .dropdown-guests__buttons
-                .dropdown-guests__btn.button-clear
+                .dropdown-guests__btn.button-clear.button-clear_hide-show
                     h3 очистить
                 .dropdown-guests__btn.button-ok
                     h3 применить

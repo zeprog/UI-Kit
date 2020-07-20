@@ -21,7 +21,7 @@ placeholder.onclick = function () {
 
         options = $.extend(true, options, countOptions);
 
-        let input = this;
+        let input = $(this);
         input.wrap('<' + options.containerTag + ' class=' + options.containerClass + '>');
 
         let inputParent = input.parent();
@@ -89,7 +89,7 @@ placeholder.onclick = function () {
 }(jQuery));
 
 
-$('input').each(function () {
+$('.value__input').each(function () {
 
     $(this).numberCount();
 
