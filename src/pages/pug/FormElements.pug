@@ -21,6 +21,7 @@ block body
                     h3.form__title.title Dropdown
                     p.form__subtitle.subtitle Default
                 include ./includes/dropdowns/dropdown-guests__default/dropdown-guests__default.pug
+                +dropdown
             .form-elements__form
                 .form__text.text.mask-input__block
                     h3.form__title.title Masked text field
@@ -106,5 +107,7 @@ block body
                     .button-gradient-pay
                         include ./includes/buttons/button-gradient_default/button-gradient_default.pug
                         +button-gradient('перейти к оплате', 'button-gradient', '', 'button-wrap', 'button-big-gradient-position')
-
-
+            .form-elements__pagination
+                .pagination__text.text
+                    h3.pagination__title.title pagination
+                include ./includes/buttons/pagination/pagination.pug

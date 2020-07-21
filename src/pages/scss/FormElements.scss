@@ -17,6 +17,7 @@
 @import '../pug/includes/buttons/button-gradient_default/button-gradient_default.scss';
 @import '../pug/includes/buttons/buttons-gradient_active/buttons-gradient_active.scss';
 @import '../pug/includes/buttons/buttons-text/buttons-text.scss';
+@import '../pug/includes/buttons/pagination/pagination.scss';
 
 .form-elements {
     width: 1160px;
@@ -184,8 +185,14 @@
 
             .button-gradient-pay {
                 width: 302px;
+                margin-bottom: 37px;
             }
         }
     }
 
+    .form-elements__pagination {
+        .pagination__text {
+            margin-bottom: 15px;
+        }
+    }
 }
