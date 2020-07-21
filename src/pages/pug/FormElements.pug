@@ -87,13 +87,13 @@ block body
                     .buttons-gradient
                         .button-gradient_default
                             include ./includes/buttons/button-gradient_default/button-gradient_default.pug
-                            +button-gradient('Click me')
+                            +button-gradient('Click me', 'button-gradient', '', '', 'button-small-gradient-position')
                         .button-gradient_active
                             include ./includes/buttons/buttons-gradient_active/buttons-gradient_active.pug
                     .buttons-white
                         .button-white_default
                             include ./includes/buttons/button-white_default/button-white_default.pug
-                            +button-white('Click me')
+                            +button-white('Click me', '', 'button-white')
                         .button-white_active
                             include ./includes/buttons/button-white_active/button-white_active.pug
                     .button-text
@@ -105,6 +105,6 @@ block body
                             +button-text('Click me', 'button-night')
                     .button-gradient-pay
                         include ./includes/buttons/button-gradient_default/button-gradient_default.pug
-                        +button-gradient('перейти к оплате', 'button-wrap', 'button-gradient')
+                        +button-gradient('перейти к оплате', 'button-gradient', '', 'button-wrap', 'button-big-gradient-position')
 
 

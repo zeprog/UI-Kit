@@ -1,4 +1,10 @@
-mixin button-gradient(text, buttonWrapClass, buttonClass, buttonTextClass)
+mixin button-gradient(text, buttonClass, buttonTextClass, buttonWrapClass, positionClass)
     div(class=buttonWrapClass)
-        a(href="http://", class=buttonClass).button-gradient
-            span(class=buttonTextClass)= text
+        a(href="http://", class=buttonClass, class=positionClass)
+            - var buttonWrapClass
+            if buttonWrapClass == 'button-wrap'
+                span(class=buttonTextClass)= text
+                img(src="/assets/img/arrow_forward_white.svg", alt="").form__arrow-right_white
+            else if buttonWrapClass == ''
+                span(class=buttonTextClass)= text
+                

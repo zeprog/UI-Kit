@@ -1,7 +1,7 @@
 .button-gradient {
     font-family: $mainFont serif;
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
     color: #fff;
     background: rgba(187, 156, 255, 1);
@@ -17,7 +17,7 @@
     position: relative;
     transition: all 0.5s ease;
     text-align: center;
-    padding: 7px 0px;
+
 
     &:hover {
         background: rgba(221, 206, 255, 1);
@@ -32,8 +32,25 @@
     }
 }
 
+.button-small-gradient-position {
+    padding: 14px 21px 14px 18px;
+}
+
+.button-big-gradient-position {
+    padding: 14px 14px 14px 25px;
+}
+
 .button-wrap {
     width: 100%;
 }
 
-.button_text {}
+.form__arrow-right_white {
+    width: 16px;
+    background-clip: text;
+    //margin: 0 0 2px 0;
+    position: relative;
+    bottom: 2px;
+    opacity: 1;
+    cursor: pointer;
+    float: right;
+}

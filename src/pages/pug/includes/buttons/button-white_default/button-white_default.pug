@@ -1,3 +1,7 @@
-mixin button-white(text)
-    a(href="http://").button-white
-        span= text
+mixin button-white(text, buttonWrapClass, buttonClass, buttonTextClass)
+    div(class=buttonWrapClass)
+        a(href="http://", class=buttonClass)
+            span(class=buttonTextClass)= text
+        
+        
+        

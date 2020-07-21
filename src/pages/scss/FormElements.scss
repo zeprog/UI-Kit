@@ -155,31 +155,35 @@
 
     .form-elements__buttons {
         .buttons__text {
-            margin: 42px 0 20px 0;
+            margin: 42px 0 15px 0;
         }
 
         .buttons {
             .buttons-gradient {
-                width: 220px;
+                width: 207px;
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 15px;
+                margin-bottom: 29px;
             }
 
             .buttons-white {
-                width: 220px;
+                width: 207px;
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 15px;
+                margin-bottom: 29px;
             }
 
             .button-text {
                 display: flex;
-                margin-bottom: 15px;
+                margin-bottom: 29px;
 
                 .button-text_night {
                     margin-left: 20px;
                 }
+            }
+
+            .button-gradient-pay {
+                width: 302px;
             }
         }
     }
