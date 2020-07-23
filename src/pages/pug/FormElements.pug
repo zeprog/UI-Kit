@@ -10,45 +10,45 @@ block body
                 .form__text.text
                     h3.form__title.title Text Field
                     p.form__subtitle.subtitle-first Default
-                include ./includes/inputs/text-default/input-text__default
+                include ./includes/inputs/input-mixin/input-mixin.pug
                 +text-field('email', 'mail', 'Email', 'form', 'form__input')
             .form-elements__form
                 .form__text.text
                     h3.form__title.title Text Field
                     p.form__subtitle.subtitle Hover / Focus
-                include ./includes/inputs/text-default/input-text__default
+                include ./includes/inputs/input-mixin/input-mixin.pug
                 +text-field('text', '', 'This is pretty awesome', 'form_active', 'form__input_active')
             .form-elements__form
                 .form__text.text
                     h3.form__title.title Dropdown
                     p.form__subtitle.subtitle Default
                 include ./includes/dropdowns/dropdown/dropdown.pug
-                +dropdown
+                +dropdown('Сколько гостей', 'Взрослые', 'Дети', 'Младенцы')
             .form-elements__form
                 .form__text.text.mask-input__block
                     h3.form__title.title Masked text field
                     p.form__subtitle.subtitle Default
-                include ./includes/inputs/text-default/input-text__default
+                include ./includes/inputs/input-mixin/input-mixin.pug
                 +text-field('text', 'birthdate', '', 'form_mask', 'form__input_mask')(id='form__input_mask')
             .form-elements__form
                 .form__date-block
                     .form__date-drop
                         h3.form__title.title.date-title Date Dropdown
-                        include ./includes/inputs/text-default/input-text__default
+                        include ./includes/inputs/input-mixin/input-mixin.pug
                         +text-field('date', '', '', 'form__date', 'form__input-date')
                     .form__date-drop
                         h3.form__title.title.date-title Date Dropdown
-                        include ./includes/inputs/text-default/input-text__default
+                        include ./includes/inputs/input-mixin/input-mixin.pug
                         +text-field('date', '', '', 'form__date', 'form__input-date')
             .form-elements__form
                 .form__filter-text
                     h3.form__title.title.filter-title filter date dropdown
-                include ./includes/inputs/text-default/input-text__default
+                include ./includes/inputs/input-mixin/input-mixin.pug
                 +text-field('', '', '', 'filter-date-dropdown', 'filter-date-dropdown__text')
             .form-elements__form
                 .form__subscription-text.text
                     h3.form__title.title Subscription text field
-                include ./includes/inputs/text-default/input-text__default
+                include ./includes/inputs/input-mixin/input-mixin.pug
                 +text-field('', '', '', 'form-subscribe', 'form__input')
         .form-elements__column-checkbox
             .form-elements__checkbox
@@ -120,8 +120,27 @@ block body
                 include ./includes/buttons/pagination/pagination.pug
         .form-elements__dropdowns
             .dropdown-column
-                .dropdown__text.text
-                    h3.dropdown__title.title Dropdown
-                    p.dropdown__subtitle.subtitle Default
-                include ./includes/inputs/text-default/input-text__default
-                +text-field('', '', '', 'dropdown-block__placeholder', '')
+                .dropdown-input-block
+                    .dropdown-input__text.text
+                        h3.dropdown-input__title.title Dropdown
+                        p.dropdown-input__subtitle.subtitle Default
+                    include ./includes/inputs/input-mixin/input-mixin.pug
+                    +text-field('', '', '', 'dropdown-block__placeholder', '')
+                .dropdown-active-block
+                    .dropdown-active__text.text
+                        h3.dropdown-active__title.title Dropdown
+                        p.dropdown-active__subtitle.subtitle Expanded
+                    include ./includes/dropdowns/dropdown/dropdown.pug
+                    +dropdown-static('2 спальни, 2 кровати...', 'Спальни', 'Кровати', 'Ванные комнаты', '2', '2', '0', 'dropdown__options_static')
+            .dropdown-guests-column
+                .dropdown-guests-block
+                    .dropdown-guests__text.text
+                        h3.dropdown-guests__title.title Dropdown
+                    include ./includes/dropdowns/dropdown/dropdown.pug
+                    +dropdown-static('Сколько гостей', 'Взрослые', 'Дети', 'Младенцы', '0', '0', '0', 'dropdown-guests__options_static')
+            .dropdown-guests-column_active
+                .dropdown-guests-block_active
+                    .dropdown-guests__text_active.text
+                        h3.dropdown-guests__title_active.title Dropdown
+                    include ./includes/dropdowns/dropdown/dropdown.pug
+                    +dropdown-static('3 гостя', 'Взрослые', 'Дети', 'Младенцы', '2', '1', '0', 'dropdown-guests__options_static')

@@ -1,5 +1,5 @@
 @import '../../utils/vars.scss';
-@import '../pug/includes/inputs/text-default/input-text__default.scss';
+@import '../pug/includes/inputs/input-mixin/input-mixin.scss';
 @import '../pug/includes/inputs/text-active/input-text__active.scss';
 @import '../pug/includes/dropdowns/dropdown/dropdown.scss';
 @import '../pug/includes/inputs//mask-input/input-text__mask.scss';
@@ -36,7 +36,7 @@
 
 
 
-    .dropdown-guests__box {
+    .dropdown__box {
         margin-top: 5px;
     }
 
@@ -200,12 +200,45 @@
 
 .form-elements__dropdowns {
     margin: 74px 0 0 39px;
+    display: flex;
 
     .dropdown-column {
         width: 253px;
 
-        .dropdown__text {
-            margin-bottom: 5px;
+        .dropdown-input-block {
+            margin-bottom: 20px;
+
+            .dropdown-input__text {
+                margin-bottom: 5px;
+            }
+        }
+
+        .dropdown-active-block {
+            .dropdown-active__text {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .dropdown-guests-column {
+        margin-left: 171px;
+        width: 303px;
+
+        .dropdown-guests-block {
+            .dropdown-guests__text {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .dropdown-guests-column_active {
+        margin-left: 70px;
+        width: 303px;
+
+        .dropdown-guests-block_active {
+            .dropdown-guests__text_active {
+                margin-bottom: 5px;
+            }
         }
     }
 }

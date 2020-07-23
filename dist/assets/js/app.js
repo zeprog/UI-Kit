@@ -9905,8 +9905,8 @@ document.addEventListener('click', function (event) {
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(jQuery, $) {var placeholder = document.querySelector('.dropdown-guests__placeholder');
-var options = document.querySelector('.dropdown-guests__options');
+/* WEBPACK VAR INJECTION */(function(jQuery, $) {var placeholder = document.querySelector('.dropdown__placeholder');
+var options = document.querySelector('.dropdown__options');
 
 placeholder.onclick = function () {
   placeholder.style.borderBottomLeftRadius = placeholder.style.borderBottomLeftRadius == '0px' ? '4px' : '0px';
@@ -9918,7 +9918,7 @@ placeholder.onclick = function () {
   $.fn.numberCount = function (countOptions) {
     var options = {
       'containerTag': 'div',
-      'containerClass': 'dropdown-guests__value',
+      'containerClass': 'dropdown__value',
       'minus': 'value_down',
       'plus': 'value_up',
       'btnTag': 'span'

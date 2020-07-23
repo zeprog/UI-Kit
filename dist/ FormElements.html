@@ -31,28 +31,18 @@
                     <h3 class="form__title title">Dropdown</h3>
                     <p class="form__subtitle subtitle">Default</p>
                 </div>
-                <div class="dropdown-guests__box">
-                    <div class="dropdown-guests__selected-box">
-                        <div class="dropdown-guests__placeholder">Сколько гостей<object class="dropdown-guests__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
-                        <div class="dropdown-guests__options">
-                            <div class="dropdown-guests__select">
-                                <h3 class="dropdown-guests__title">взрослые</h3><input class="value__input" type="number" value="0" name="quantity" min="0" max="10" step="1">
+                <div class="dropdown__box">
+                    <div class="dropdown__selected-box">
+                        <div class="dropdown__placeholder">Сколько гостей<object class="dropdown__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
+                        <div class="dropdown__options">
+                            <div class="dropdown__select">
+                                <h3 class="dropdown__title">Взрослые</h3><input class="value__input" type="number" value="0" name="quantity" min="0" max="10" step="1">
                             </div>
-                            <div class="dropdown-guests__select">
-                                <h3 class="dropdown-guests__title">дети</h3><input class="value__input" type="number" value="0" name="quantity" min="0" max="10" step="1">
+                            <div class="dropdown__select">
+                                <h3 class="dropdown__title">Дети</h3><input class="value__input" type="number" value="0" name="quantity" min="0" max="10" step="1">
                             </div>
-                            <div class="dropdown-guests__select">
-                                <h3 class="dropdown-guests__title">младенцы</h3><input class="value__input" type="number" value="0" name="quantity" min="0" max="10" step="1">
-                            </div>
-                            <div class="dropdown-guests__buttons">
-                                <div class="dropdown-guests__btn button-clear button-clear_hide-show">
-                                    <div>
-                                        <h3 class="button-night">очистить</h3>
-                                    </div>
-                                </div>
-                                <div class="dropdown-guests__btn button-ok">
-                                    <h3>применить</h3>
-                                </div>
+                            <div class="dropdown__select">
+                                <h3 class="dropdown__title">Младенцы</h3><input class="value__input" type="number" value="0" name="quantity" min="0" max="10" step="1">
                             </div>
                         </div>
                     </div>
@@ -251,11 +241,114 @@
         </div>
         <div class="form-elements__dropdowns">
             <div class="dropdown-column">
-                <div class="dropdown__text text">
-                    <h3 class="dropdown__title title">Dropdown</h3>
-                    <p class="dropdown__subtitle subtitle">Default</p>
+                <div class="dropdown-input-block">
+                    <div class="dropdown-input__text text">
+                        <h3 class="dropdown-input__title title">Dropdown</h3>
+                        <p class="dropdown-input__subtitle subtitle">Default</p>
+                    </div>
+                    <div class="dropdown-block__placeholder">2 спальни, 2 кровати...<object class="dropdown-guests__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
                 </div>
-                <div class="dropdown-block__placeholder">2 спальни, 2 кровати...<object class="dropdown-guests__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
+                <div class="dropdown-active-block">
+                    <div class="dropdown-active__text text">
+                        <h3 class="dropdown-active__title title">Dropdown</h3>
+                        <p class="dropdown-active__subtitle subtitle">Expanded</p>
+                    </div>
+                    <div class="dropdown__box">
+                        <div class="dropdown__selected-box-static">
+                            <div class="dropdown__placeholder_static">2 спальни, 2 кровати...<object class="dropdown__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
+                            <div class="dropdown__options_static">
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Спальни</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="2" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Кровати</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="2" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Ванные комнаты</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="0" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-guests-column">
+                <div class="dropdown-guests-block">
+                    <div class="dropdown-guests__text text">
+                        <h3 class="dropdown-guests__title title">Dropdown</h3>
+                    </div>
+                    <div class="dropdown__box">
+                        <div class="dropdown__selected-box-static">
+                            <div class="dropdown__placeholder_static">Сколько гостей<object class="dropdown__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
+                            <div class="dropdown-guests__options_static">
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Взрослые</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="0" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Дети</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="0" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Младенцы</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="0" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__buttons_static">
+                                    <div class="dropdown__btn button-clear button-clear_hide-show">
+                                        <div>
+                                            <h3 class="button-night">очистить</h3>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__btn button-ok">
+                                        <div>
+                                            <h3 class="button-light">применить</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-guests-column_active">
+                <div class="dropdown-guests-block_active">
+                    <div class="dropdown-guests__text_active text">
+                        <h3 class="dropdown-guests__title_active title">Dropdown</h3>
+                    </div>
+                    <div class="dropdown__box">
+                        <div class="dropdown__selected-box-static">
+                            <div class="dropdown__placeholder_static">3 гостя<object class="dropdown__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
+                            <div class="dropdown-guests__options_static">
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Взрослые</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="2" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Дети</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="1" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__select_static">
+                                    <h3 class="dropdown__title_static">Младенцы</h3>
+                                    <div><span class="value_down_static">-</span><input class="value__input_static" type="number" value="0" name="quantity" min="0" max="10" step="1"><span class="value_up_static">+</span></div>
+                                </div>
+                                <div class="dropdown__buttons_static">
+                                    <div class="dropdown__btn button-clear button-clear_hide-show">
+                                        <div>
+                                            <h3 class="button-night">очистить</h3>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown__btn button-ok">
+                                        <div>
+                                            <h3 class="button-light">применить</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

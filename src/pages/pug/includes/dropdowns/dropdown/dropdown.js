@@ -1,5 +1,5 @@
-let placeholder = document.querySelector('.dropdown-guests__placeholder');
-let options = document.querySelector('.dropdown-guests__options');
+let placeholder = document.querySelector('.dropdown__placeholder');
+let options = document.querySelector('.dropdown__options');
 
 
 placeholder.onclick = function () {
@@ -13,7 +13,7 @@ placeholder.onclick = function () {
 
         let options = {
             'containerTag': 'div',
-            'containerClass': 'dropdown-guests__value',
+            'containerClass': 'dropdown__value',
             'minus': 'value_down',
             'plus': 'value_up',
             'btnTag': 'span'
