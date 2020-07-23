@@ -1,6 +1,6 @@
 import '../scss/FormElements.scss';
 import '../pug/includes/inputs/like-button/like-button';
-import '../pug/includes/dropdowns/dropdown-guests__default/dropdown-guests__default';
+import '../pug/includes/dropdowns/dropdown/dropdown';
 import '../pug/includes/inputs/rate-button/rate-button';
 
 $(document).ready(function () {

@@ -10422,8 +10422,8 @@ module.exports = content.locals || {};
 /* harmony import */ var _scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_FormElements_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_inputs_like_button_like_button__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-/* harmony import */ var _pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_dropdowns_dropdown_guests_default_dropdown_guests_default__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _pug_includes_dropdowns_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var _pug_includes_dropdowns_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_dropdowns_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _pug_includes_inputs_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
 /* harmony import */ var _pug_includes_inputs_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_pug_includes_inputs_rate_button_rate_button__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -10555,8 +10555,8 @@ var like_button = __webpack_require__(2);
 // EXTERNAL MODULE: ./src/pages/scss/Cards.scss
 var Cards = __webpack_require__(5);
 
-// EXTERNAL MODULE: ./src/pages/pug/includes/dropdowns/dropdown-guests__default/dropdown-guests__default.js
-var dropdown_guests_default = __webpack_require__(3);
+// EXTERNAL MODULE: ./src/pages/pug/includes/dropdowns/dropdown/dropdown.js
+var dropdown = __webpack_require__(3);
 
 // CONCATENATED MODULE: ./src/pages/js/Cards.js
 

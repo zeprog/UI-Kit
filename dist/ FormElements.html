@@ -24,7 +24,7 @@
                     <h3 class="form__title title">Text Field</h3>
                     <p class="form__subtitle subtitle">Hover / Focus</p>
                 </div>
-                <form class="form_active" action=""><input class="form__input_active" placeholder="This is pretty awesome"></form>
+                <form class="form_active" action=""><input class="form__input_active" name="" placeholder="This is pretty awesome" requare></form>
             </div>
             <div class="form-elements__form">
                 <div class="form__text text">
@@ -63,21 +63,17 @@
                     <h3 class="form__title title">Masked text field</h3>
                     <p class="form__subtitle subtitle">Default</p>
                 </div>
-                <form class="form_mask" action=""><input class="form__input_mask" name="birthdate" requare id="form__input_mask"></form>
+                <form class="form_mask" action=""><input class="form__input_mask" name="birthdate" placeholder="" requare></form>
             </div>
             <div class="form-elements__form">
                 <div class="form__date-block">
                     <div class="form__date-drop">
                         <h3 class="form__title title date-title">Date Dropdown</h3>
-                        <form action="">
-                            <div class="form__date"><input class="form__input-date" type="date" name=""><span class="form__span"><button class="form__button"><img src="/assets/img/arrow-down.svg" alt=""></button></span></div>
-                        </form>
+                        <form class="form__date" action=""><input class="form__input-date" type="date" name=""><span class="form__span"><button class="form__button"><img src="/assets/img/arrow-down.svg" alt=""></button></span></form>
                     </div>
                     <div class="form__date-drop">
                         <h3 class="form__title title date-title">Date Dropdown</h3>
-                        <form action="">
-                            <div class="form__date"><input class="form__input-date" type="date" name=""><span class="form__span"><button class="form__button"><img src="/assets/img/arrow-down.svg" alt=""></button></span></div>
-                        </form>
+                        <form class="form__date" action=""><input class="form__input-date" type="date" name=""><span class="form__span"><button class="form__button"><img src="/assets/img/arrow-down.svg" alt=""></button></span></form>
                     </div>
                 </div>
             </div>
@@ -88,10 +84,10 @@
                 <div class="filter-date-dropdown">
                     <div class="filter-date-dropdown__dates">
                         <div class="filter-date-dropdown__checkin-date">
-                            <div class="filter-date-dropdown__checkin filter-date-dropdown__text" data-placeholder="Заезд">Заезд</div>
+                            <div class="filter-date-dropdown__text filter-date-dropdown__checkin" data-placeholder="">Заезд</div>
                         </div>
                         <div class="filter-date-dropdown__departure-date">
-                            <div class="filter-date-dropdown__departure filter-date-dropdown__text" data-placeholder="Отъезд">Отъезд</div>
+                            <div class="filter-date-dropdown__text filter-date-dropdown__departure" data-placeholder="">Отъезд</div>
                         </div>
                     </div><span class="filter-date-dropdown__arrow"><img src="/assets/img/arrow-down.svg" alt=""></span>
                 </div>
@@ -100,7 +96,7 @@
                 <div class="form__subscription-text text">
                     <h3 class="form__title title">Subscription text field</h3>
                 </div>
-                <form class="form-subscribe" action=""><input class="form__input" type="email" name="mail" placeholder="Email" requare><img class="form__arrow-right" src="/assets/img/arrow_forward.svg" alt=""></form>
+                <form class="form-subscribe" action=""><input class="form__input" type="" name="" placeholder="" requare><img class="form__arrow-right" src="/assets/img/arrow_forward.svg" alt=""></form>
             </div>
         </div>
         <div class="form-elements__column-checkbox">
@@ -251,6 +247,15 @@
                     <p class="pagination_passive">15</p><img class="pagination_arrow" src="/assets/img/arrow_forward_white.svg" alt="">
                 </div>
                 <p class="pagination-text">1 – 12 из 100+ вариантов аренды</p>
+            </div>
+        </div>
+        <div class="form-elements__dropdowns">
+            <div class="dropdown-column">
+                <div class="dropdown__text text">
+                    <h3 class="dropdown__title title">Dropdown</h3>
+                    <p class="dropdown__subtitle subtitle">Default</p>
+                </div>
+                <div class="dropdown-block__placeholder">2 спальни, 2 кровати...<object class="dropdown-guests__arrow" data="./assets/img/arrow-down.svg" type=""></object></div>
             </div>
         </div>
     </div>

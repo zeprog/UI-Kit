@@ -11,38 +11,45 @@ block body
                     h3.form__title.title Text Field
                     p.form__subtitle.subtitle-first Default
                 include ./includes/inputs/text-default/input-text__default
+                +text-field('email', 'mail', 'Email', 'form', 'form__input')
             .form-elements__form
                 .form__text.text
                     h3.form__title.title Text Field
                     p.form__subtitle.subtitle Hover / Focus
-                include ./includes/inputs/text-active/input-text__active
+                include ./includes/inputs/text-default/input-text__default
+                +text-field('text', '', 'This is pretty awesome', 'form_active', 'form__input_active')
             .form-elements__form
                 .form__text.text
                     h3.form__title.title Dropdown
                     p.form__subtitle.subtitle Default
-                include ./includes/dropdowns/dropdown-guests__default/dropdown-guests__default.pug
+                include ./includes/dropdowns/dropdown/dropdown.pug
                 +dropdown
             .form-elements__form
                 .form__text.text.mask-input__block
                     h3.form__title.title Masked text field
                     p.form__subtitle.subtitle Default
-                include ./includes/inputs/mask-input/input-text__mask.pug
+                include ./includes/inputs/text-default/input-text__default
+                +text-field('text', 'birthdate', '', 'form_mask', 'form__input_mask')(id='form__input_mask')
             .form-elements__form
                 .form__date-block
                     .form__date-drop
                         h3.form__title.title.date-title Date Dropdown
-                        include ./includes/dropdowns/date-drop/input-date.pug
+                        include ./includes/inputs/text-default/input-text__default
+                        +text-field('date', '', '', 'form__date', 'form__input-date')
                     .form__date-drop
                         h3.form__title.title.date-title Date Dropdown
-                        include ./includes/dropdowns/date-drop/input-date.pug
+                        include ./includes/inputs/text-default/input-text__default
+                        +text-field('date', '', '', 'form__date', 'form__input-date')
             .form-elements__form
                 .form__filter-text
                     h3.form__title.title.filter-title filter date dropdown
-                include ./includes/dropdowns/filter-date-drop/filter-date-drop.pug
+                include ./includes/inputs/text-default/input-text__default
+                +text-field('', '', '', 'filter-date-dropdown', 'filter-date-dropdown__text')
             .form-elements__form
                 .form__subscription-text.text
                     h3.form__title.title Subscription text field
-                include ./includes/inputs/subscribe-input/subscribe-input.pug
+                include ./includes/inputs/text-default/input-text__default
+                +text-field('', '', '', 'form-subscribe', 'form__input')
         .form-elements__column-checkbox
             .form-elements__checkbox
                 .checkbox__text.text
@@ -111,3 +118,10 @@ block body
                 .pagination__text.text
                     h3.pagination__title.title pagination
                 include ./includes/buttons/pagination/pagination.pug
+        .form-elements__dropdowns
+            .dropdown-column
+                .dropdown__text.text
+                    h3.dropdown__title.title Dropdown
+                    p.dropdown__subtitle.subtitle Default
+                include ./includes/inputs/text-default/input-text__default
+                +text-field('', '', '', 'dropdown-block__placeholder', '')

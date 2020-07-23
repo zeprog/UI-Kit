@@ -1,0 +1,28 @@
+mixin text-field(type, name, placeholder, classForm, classInput)
+    - var classForm
+    if classForm == 'form__date'
+        form(action="", class=classForm)
+            input(type=type, name=name, class=classInput)
+            span.form__span
+                button.form__button
+                    img(src="/assets/img/arrow-down.svg", alt="")
+    else if classForm == 'filter-date-dropdown'
+        div(class=classForm)
+            .filter-date-dropdown__dates
+                .filter-date-dropdown__checkin-date
+                    div(data-placeholder=placeholder, class=classInput).filter-date-dropdown__checkin Заезд
+                .filter-date-dropdown__departure-date
+                    div(data-placeholder=placeholder, class=classInput).filter-date-dropdown__departure Отъезд
+            span.filter-date-dropdown__arrow
+                img(src="/assets/img/arrow-down.svg", alt="")
+    else if classForm == 'dropdown-block__placeholder'
+        div(class=classForm) 2 спальни, 2 кровати...
+            object(data="./assets/img/arrow-down.svg", type="").dropdown-guests__arrow
+    else
+        form(action="", class=classForm)
+            - var classForm
+            if classForm == 'form-subscribe'
+                input(type=type, name=name, placeholder=placeholder, class=classInput, requare)
+                img(src="/assets/img/arrow_forward.svg", alt="").form__arrow-right
+            else
+                input(type=type, name=name, placeholder=placeholder, class=classInput, requare)
