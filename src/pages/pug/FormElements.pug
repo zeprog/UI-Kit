@@ -55,6 +55,7 @@ block body
                 .checkbox__text.text
                     h3.checkbox__title.title Checkbox Buttons
                 include ./includes/inputs/checkbox-input/checkbox-input.pug
+                +checkbox('checkbox-standart__wrap')
             .form-elements__radio
                 .radio__text.text
                     h3.radio__title.title Radio Buttons
@@ -144,3 +145,23 @@ block body
                         h3.dropdown-guests__title_active.title Dropdown
                     include ./includes/dropdowns/dropdown/dropdown.pug
                     +dropdown-static('3 гостя', 'Взрослые', 'Дети', 'Младенцы', '2', '1', '0', 'dropdown-guests__options_static')
+        .form-elements__checkboxes
+            .checkbox-expand__column
+                .checkbox-expand__block
+                    .checkbox-expand__text.text
+                        h3.checkbox-expand__title.title expandable checkbox list
+                        img(src="/assets/img/arrow-down.svg", alt="").checkbox-expand__arrow
+                include ./includes/inputs/checkbox-input/checkbox-input.pug
+                +checkbox('checkbox-expand__wrap')
+            .checkbox-rich__column
+                .checkbox-rich__block
+                    .checkbox-rich__text.text
+                        h3.checkbox-rich__title.title rich Checkbox Buttons
+                    include ./includes/inputs/checkbox-input/checkbox-input.pug
+                    +checkbox('checkbox-rich__wrap')
+            .checkbox-bullet__column
+                .checkbox-bullet__block
+                    .checkbox-bullet__text.text
+                        h3.checkbox-bullet__title.title bullet list
+                    include ./includes/inputs/checkbox-input/checkbox-input.pug
+                    +checkbox('checkbox-bullet__wrap')

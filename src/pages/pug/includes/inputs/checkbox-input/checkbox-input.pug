@@ -1,9 +1,54 @@
-.checkbox
-    input(type="checkbox")#checkbox-smoke.checkbox__input
-    label(for="checkbox-smoke").checkbox__label Можно курить
-.checkbox
-    input(type="checkbox")#checkbox-pets.checkbox__input
-    label(for="checkbox-pets").checkbox__label Можно с питомцами
-.checkbox
-    input(type="checkbox")#checkbox-guests.checkbox__input
-    label(for="checkbox-guests").checkbox__label Можно пригласить гостей <br><span></span>(до 10 человек)
+mixin checkbox(divCheckWrapClass)
+    - var divCheckWrapClass
+    if divCheckWrapClass == 'checkbox-standart__wrap'
+        div(class=divCheckWrapClass)
+            .checkbox
+                input(type="checkbox")#checkbox-smoke.checkbox__input
+                label(for="checkbox-smoke").checkbox__label Можно курить
+            .checkbox
+                input(type="checkbox")#checkbox-pets.checkbox__input
+                label(for="checkbox-pets").checkbox__label Можно с питомцами
+            .checkbox
+                input(type="checkbox")#checkbox-guests.checkbox__input
+                label(for="checkbox-guests").checkbox__label Можно пригласить гостей <br><span></span>(до 10 человек)
+    else if divCheckWrapClass == 'checkbox-expand__wrap'
+        .checkbox-expand__text_active.text
+            h3.checkbox-expand__title_active.title expandable checkbox list
+            img(src="/assets/img/arrow-down.svg", alt="").checkbox-expand__arrow
+        div(class=divCheckWrapClass)
+            .checkbox
+                input(type="checkbox")#checkbox-breakfast.checkbox__input.checkbox-expand__input
+                label(for="checkbox-breakfast").checkbox__label.checkbox-expand__label Завтрак
+            .checkbox
+                input(type="checkbox")#checkbox-desk.checkbox__input.checkbox-expand__input
+                label(for="checkbox-desk").checkbox__label.checkbox-expand__label Письменный стол
+            .checkbox
+                input(type="checkbox")#checkbox-feeding-chair.checkbox__input.checkbox-expand__input
+                label(for="checkbox-feeding-chair").checkbox__label.checkbox-expand__label Стул для кормления
+            .checkbox
+                input(type="checkbox")#checkbox-cot.checkbox__input.checkbox-expand__input
+                label(for="checkbox-cot").checkbox__label.checkbox-expand__label Кроватка
+            .checkbox
+                input(type="checkbox")#checkbox-tv.checkbox__input.checkbox-expand__input
+                label(for="checkbox-tv").checkbox__label.checkbox-expand__label Телевизор
+            .checkbox
+                input(type="checkbox")#checkbox-shampoo.checkbox__input.checkbox-expand__input
+                label(for="checkbox-shampoo").checkbox__label.checkbox-expand__label Шампунь
+    else if divCheckWrapClass == 'checkbox-rich__wrap'
+        div(class=divCheckWrapClass)
+            .checkbox-rich
+                input(type="checkbox")#checkbox-hallway.checkbox__input
+                label(for="checkbox-hallway").checkbox__label.checkbox-rich__label Широкий коридор
+                p.checkbox-rich__text-input Ширина коридоров в номере <br>не менее 91 см.
+            .checkbox-rich
+                input(type="checkbox")#checkbox-assistant.checkbox__input
+                label(for="checkbox-assistant").checkbox__label.checkbox-rich__label Помощник для инвалидов
+                p.checkbox-rich__text-input На 1 этаже вас встретит специалист  <br>и проводит до номера.
+    else
+        div(class=divCheckWrapClass)
+            .bullet
+                p.bullet__text Нельзя с питомцами
+            .bullet
+                p.bullet__text Без вечеринок и мероприятий
+            .bullet
+                p.bullet__text Время прибытия — после 13:00, <br>а выезд до 12:00

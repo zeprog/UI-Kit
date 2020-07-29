@@ -242,3 +242,41 @@
         }
     }
 }
+
+.form-elements__checkboxes {
+    margin: 53px 0 0 39px;
+    display: flex;
+
+    .checkbox-expand__column {
+        width: 253px;
+
+        .checkbox-expand__block {
+            margin-bottom: 46px;
+
+            .checkbox-expand__text {
+                display: flex;
+                justify-content: space-between;
+
+
+            }
+        }
+
+        .checkbox-expand__arrow {
+            margin-right: 15px;
+        }
+    }
+
+    .checkbox-rich__column {
+        margin-left: 171px;
+        width: 303px;
+
+        .checkbox-rich__text {
+            margin-bottom: 15px;
+        }
+    }
+
+    .checkbox-bullet__column {
+        margin-left: 70px;
+        width: 303px;
+    }
+}
