@@ -1,0 +1,67 @@
+.dignity-dignity {
+    display: flex;
+    padding-bottom: 46px;
+
+    .dignity-dignity__img {
+        width: 38px;
+    }
+
+    .dignity-dignity__text {
+        margin-left: 15px;
+
+        .dignity-dignity__subtitle {
+            font-size: 13px;
+            word-spacing: 0.2;
+        }
+    }
+}
+
+.dignity__text {
+
+    font-family: $mainFont sans-serif;
+    color: $mainColor;
+    opacity: 0.75;
+}
+
+.dignity__title {
+    font-size: 13px;
+    padding-bottom: 7px;
+}
+
+.dignity-review {
+    display: flex;
+    margin-left: 168px;
+    width: 705px;
+
+    .dignity-review__block {
+        display: block;
+
+        .dignity-review__img {
+            height: 85px;
+            position: relative;
+            top: -5px;
+        }
+
+        .dignity-review__block-like {
+            position: relative;
+            top: -25px;
+            left: 22px;
+        }
+    }
+
+    .dignity-review__text {
+        margin-top: 10px;
+        position: relative;
+        left: -11px;
+
+        .dignity-review__subtitle {
+            font-size: 14px;
+        }
+
+        .dignity-review__text-review {
+            font-size: 13px;
+            margin-top: 12px;
+            line-height: 1.7;
+        }
+    }
+}

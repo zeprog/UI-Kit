@@ -165,3 +165,11 @@ block body
                         h3.checkbox-bullet__title.title bullet list
                     include ./includes/inputs/checkbox-input/checkbox-input.pug
                     +checkbox('checkbox-bullet__wrap')
+        .form-elements__dignity
+            .dignity-dignity__column
+                include ./includes/inputs/dignity-mixin/dignity-mixin.pug
+                +comfort('../../assets/img/smile.svg', 'Комфорт', 'Шумопоглощающие стены')
+                +comfort('../../assets/img/location_city.svg', 'Удобство', 'Окно в каждой из спален')
+            .dignity-review__column
+                include ./includes/inputs/dignity-mixin/dignity-mixin.pug
+                +review('../../assets/img/man-photo.svg', 'Мурад Сарафанов', '5 дней назад',)

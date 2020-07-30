@@ -18,6 +18,8 @@
 @import '../pug/includes/buttons/buttons-gradient_active/buttons-gradient_active.scss';
 @import '../pug/includes/buttons/buttons-text/buttons-text.scss';
 @import '../pug/includes/buttons/pagination/pagination.scss';
+@import '../pug/includes/inputs/dignity-mixin/dignity-mixin.scss';
+
 
 .form-elements {
     width: 1160px;
@@ -279,4 +281,9 @@
         margin-left: 70px;
         width: 303px;
     }
+}
+
+.form-elements__dignity {
+    margin: 87px 0 0 41px;
+    display: flex;
 }

@@ -1,0 +1,20 @@
+mixin comfort(imgSrc, title, subtitle)
+    .dignity-dignity
+        img(src=imgSrc).dignity-dignity__img
+        .dignity-dignity__text.dignity__text
+            h3.dignity-dignity__title.dignity__title= title
+            p.dignity-dignity__subtitle= subtitle
+
+
+
+mixin review(imgSrc, name, time, text)
+    .dignity-review
+        .dignity-review__block
+            img(src=imgSrc).dignity-review__img
+            .dignity-review__block-like
+                include ../like-button/like-button.pug
+                +like-button('#like__button2', '11')
+        .dignity-review__text.dignity__text
+            h3.dignity-review__title.dignity__title= name
+            p.dignity-review__subtitle.dignity__text= time
+            p.dignity-review__text-review Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. <br>И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
