@@ -9906,7 +9906,7 @@ document.addEventListener('click', function (event) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery, $) {var placeholder = document.querySelector('.dropdown__placeholder');
-var options = document.querySelector('.dropdown__options');
+var options = document.querySelector('.dropdown-guests__options');
 
 placeholder.onclick = function () {
   placeholder.style.borderBottomLeftRadius = placeholder.style.borderBottomLeftRadius == '0px' ? '4px' : '0px';
@@ -9933,16 +9933,12 @@ placeholder.onclick = function () {
     var plus = inputParent.find('.' + options.plus);
     var min = input.attr('min');
     var max = input.attr('max');
-    var btnClear = $('.button-clear');
+    var btnClear = $('.button-clear_hide-show');
     var step = +input.attr('step');
 
     if (+input.val() <= +min) {
       minus.addClass('disabled');
     }
-    /*if (+input.val() > +min) {
-        btnClear.show();
-    }*/
-
 
     minus.click(function () {
       var input = $(this).parent().find('input');
@@ -9953,7 +9949,9 @@ placeholder.onclick = function () {
 
         if (+input.val() === +min) {
           input.prev('.' + options.minus).addClass('disabled');
-          btnClear.hide();
+          btnClear.css({
+            'opacity': '0'
+          });
         }
 
         if (input.next('.' + options.plus).hasClass('disabled')) {
@@ -9969,7 +9967,10 @@ placeholder.onclick = function () {
 
       if (+inputValue < +max) {
         input.val(+inputValue + 1);
-        btnClear.show();
+        btnClear.css({
+          'opacity': '1',
+          'cursor': 'default'
+        });
 
         if (+input.val() === +max) {
           input.next('.' + options.plus).addClass('disabled');

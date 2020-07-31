@@ -38,10 +38,6 @@ placeholder.onclick = function () {
             minus.addClass('disabled');
         }
 
-        /*if (+input.val() > +min) {
-            btnClear.show();
-        }*/
-
         minus.click(function () {
             let input = $(this).parent().find('input');
             let inputValue = input.val();
