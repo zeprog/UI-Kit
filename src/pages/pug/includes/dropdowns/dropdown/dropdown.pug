@@ -1,90 +1,118 @@
 include ../../buttons/buttons-text/buttons-text.pug
 
-mixin dropdown(placeholer, select1, select2, select3)
+mixin dropdown(placeholer, select1, select2, select3, value, optionsClass)
     .dropdown__box
         .dropdown__selected-box
-            - var placeholder
-            if placeholder == 'Сколько гостей'
-                .dropdown__placeholder=placeholer
-                    object(data="./assets/img/arrow-down.svg", type="").dropdown__arrow
-                .dropdown__options
+            .dropdown__placeholder= placeholer
+                object(data="./assets/img/arrow-down.svg", type="").dropdown__arrow
+            div(class=optionsClass)
+                - var optionsClass
+                if optionsClass == 'dropdown-guests__options'
                     .dropdown__select
                         h3.dropdown__title= select1
-                        input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
+                        div.dropdown__value
+                            input(type="number" value=value name="quantity" min='0' max='10' step='1').value__input
                     .dropdown__select
                         h3.dropdown__title= select2
-                        input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
+                        div.dropdown__value
+                            input(type="number" value=value name="quantity" min='0' max='10' step='1').value__input
                     .dropdown__select
                         h3.dropdown__title= select3
-                        input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
+                        div.dropdown__value
+                            input(type="number" value=value name="quantity" min='0' max='10' step='1').value__input
                     .dropdown__buttons
-                        .dropdown__btn.button-clear.button-clear_hide-show
+                        .button-clear.button-clear_hide-show
                             +button-text('очистить', 'button-night')
-                        .dropdown__btn.button-ok
+                        .button-ok
                             +button-text('применить', 'button-light')
-            else
-                .dropdown__placeholder= placeholer
-                    object(data="./assets/img/arrow-down.svg", type="").dropdown__arrow
-                .dropdown__options
+                else
                     .dropdown__select
                         h3.dropdown__title= select1
-                        input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
+                        div.dropdown__value
+                            input(type="number" value=value1 name="quantity" min='0' max='10' step='1').value__input
                     .dropdown__select
                         h3.dropdown__title= select2
-                        input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
+                        div.dropdown__value
+                            input(type="number" value=value2 name="quantity" min='0' max='10' step='1').value__input
                     .dropdown__select
                         h3.dropdown__title= select3
-                        input(type="number" value="0" name="quantity" min='0' max='10' step='1').value__input
+                        div.dropdown__value
+                            input(type="number" value=value3 name="quantity" min='0' max='10' step='1').value__input
 
 
 
-mixin dropdown-static(placeholer, select1, select2, select3, value1, value2, value3, optionsClass)
+mixin dropdown-static(placeholer, select1, select2, select3, value1, value2, value3, optionsClass, disabledButton)
     .dropdown__box
         .dropdown__selected-box-static
             .dropdown__placeholder_static= placeholer
                 object(data="./assets/img/arrow-down.svg", type="").dropdown__arrow
             div(class=optionsClass)
                 - var optionsClass
+                - var disabledClass = 'disabled_static'
                 if optionsClass == 'dropdown-guests__options_static'
                     .dropdown__select_static
                         h3.dropdown__title_static= select1
-                        div
-                            span(class=disabledClass).value_down_static -
+                        div.dropdown__value
+                            - var value1
+                            if value1 == '0'
+                                span(class=disabledClass).value_down_static -
+                            else
+                                span.value_down_static -
                             input(type="number" value=value1 name="quantity" min='0' max='10' step='1').value__input_static
-                            span(class=disabledClass).value_up_static +
+                            span.value_up_static +
                     .dropdown__select_static
                         h3.dropdown__title_static= select2
-                        div
-                            span(class=disabledClass).value_down_static -
+                        div.dropdown__value
+                            - var value2
+                            if value2 == '0'
+                                span(class=disabledClass).value_down_static -
+                            else
+                                span.value_down_static -
                             input(type="number" value=value2 name="quantity" min='0' max='10' step='1').value__input_static
-                            span(class=disabledClass).value_up_static +
+                            span.value_up_static +
                     .dropdown__select_static
                         h3.dropdown__title_static= select3
-                        div
-                            span(class=disabledClass).value_down_static -
+                        div.dropdown__value
+                            - var value3
+                            if value3 == '0'
+                                span(class=disabledClass).value_down_static -
+                            else
+                                span.value_down_static -
                             input(type="number" value=value3 name="quantity" min='0' max='10' step='1').value__input_static
-                            span(class=disabledClass).value_up_static +
+                            span.value_up_static +
                     .dropdown__buttons_static
-                        .dropdown__btn.button-clear.button-clear_hide-show
-                            +button-text('очистить', 'button-night')
+                        div(class=disabledButton).dropdown__btn.button-clear
+                            +button-text_static('очистить', 'button-night_static')
                         .dropdown__btn.button-ok
-                            +button-text('применить', 'button-light')
+                            +button-text_static('применить', 'button-light_static')
                 else
                     .dropdown__select_static
                         h3.dropdown__title_static= select1
-                        div
-                            span(class=disabledClass).value_down_static -
+                        div.dropdown__value
+                            - var value1
+                            if value1 == '0'
+                                span(class=disabledClass).value_down_static -
+                            else
+                                span.value_down_static -
                             input(type="number" value=value1 name="quantity" min='0' max='10' step='1').value__input_static
-                            span(class=disabledClass).value_up_static +
+                            span.value_up_static +
                     .dropdown__select_static
                         h3.dropdown__title_static= select2
-                        div
-                            span(class=disabledClass).value_down_static -
+                        div.dropdown__value
+                            - var value2
+                            if value2 == '0'
+                                span(class=disabledClass).value_down_static -
+                            else
+                                span.value_down_static -
                             input(type="number" value=value2 name="quantity" min='0' max='10' step='1').value__input_static
-                            span(class=disabledClass).value_up_static +
+                            span.value_up_static +
                     .dropdown__select_static
                         h3.dropdown__title_static= select3
-                        div
-                            span(class=disabledClass).value_down_static -
+                        div.dropdown__value
+                            - var value3
+                            if value3 == '0'
+                                span(class=disabledClass).value_down_static -
+                            else
+                                span.value_down_static -
                             input(type="number" value=value3 name="quantity" min='0' max='10' step='1').value__input_static
-                            span(class=disabledClass).value_up_static +
+                            span.value_up_static +

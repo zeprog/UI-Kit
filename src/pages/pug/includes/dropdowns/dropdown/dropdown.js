@@ -1,5 +1,5 @@
 let placeholder = document.querySelector('.dropdown__placeholder');
-let options = document.querySelector('.dropdown__options');
+let options = document.querySelector('.dropdown-guests__options');
 
 
 placeholder.onclick = function () {
@@ -31,7 +31,7 @@ placeholder.onclick = function () {
         let plus = inputParent.find('.' + options.plus);
         let min = input.attr('min');
         let max = input.attr('max');
-        let btnClear = $('.button-clear');
+        let btnClear = $('.button-clear_hide-show');
         let step = +input.attr('step');
 
         if (+input.val() <= +min) {
@@ -52,7 +52,7 @@ placeholder.onclick = function () {
 
                 if (+input.val() === +min) {
                     input.prev('.' + options.minus).addClass('disabled');
-                    btnClear.hide();
+                    btnClear.css({ 'opacity': '0' });
                 }
                 if (input.next('.' + options.plus).hasClass('disabled')) {
                     input.next('.' + options.plus).removeClass('disabled')
@@ -68,7 +68,7 @@ placeholder.onclick = function () {
 
             if (+inputValue < +max) {
                 input.val(+inputValue + 1);
-                btnClear.show();
+                btnClear.css({ 'opacity': '1', 'cursor': 'default' });
                 if (+input.val() === +max) {
 
                     input.next('.' + options.plus).addClass('disabled');

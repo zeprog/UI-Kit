@@ -1,21 +1,18 @@
+.button-night_static,
 .button-night {
     border: none;
     font-size: 11px;
     letter-spacing: 0.2px;
-    color: $mainColor;
-    opacity: 0.5;
+    color: #8f8fa0;
     text-transform: uppercase;
     font-family: $mainFont sans-serif;
     outline: none;
     cursor: pointer;
 }
 
-.button-clear_hide-show {
-    opacity: 1;
-    //display: none;
-    cursor: default;
-}
 
+
+.button-light_static,
 .button-light {
     border: none;
     font-size: 11px;
