@@ -1,0 +1,183 @@
+.footer-widget {
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    .footer-widget__body {
+        width: 1160px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-widget__column-logo {
+            width: 300px;
+            padding: 92px 0 0 40px;
+
+            .footer-widget__logo {
+
+                .footer-widget__logo-img {
+                    width: 98px;
+                    height: 40px;
+                }
+            }
+
+            .footer-widget__text {
+                font-family: $mainFont serif;
+                font-weight: 500;
+                font-size: 13px;
+                padding-top: 11px;
+                line-height: 1.8;
+                color: #1F2041;
+                opacity: 0.75;
+            }
+        }
+
+        .footer-widget__column-nav {
+            padding: 98px 0 0 0px;
+
+
+            .footer-widget__title {
+                font-family: $mainFont serif;
+                font-weight: 800;
+                font-size: 9.6px;
+                text-transform: uppercase;
+                color: #1F2041;
+                padding-bottom: 20px;
+                word-spacing: 1px;
+            }
+
+            .footer-widget__text-nav {
+                letter-spacing: 0.04em;
+                font-family: $mainFont serif;
+                font-weight: 500;
+                font-size: 13px;
+                padding-bottom: 20px;
+
+                .footer-widget__text_link {
+                    color: #1F2041;
+                    opacity: 0.5;
+                    transition: 0.3s ease;
+                    letter-spacing: 0px;
+
+                    &:hover {
+                        color: #1F2041;
+                        opacity: 0.75;
+                        font-weight: bold;
+                    }
+                }
+
+                .footer-widget__text {
+                    opacity: 0.75;
+                    line-height: 1.7;
+                    word-spacing: -2px;
+                    letter-spacing: 0.2px;
+                    position: relative;
+                    top: -4px;
+                }
+            }
+
+            .footer__form {
+                width: 247px;
+                position: relative;
+                top: -5px;
+            }
+        }
+
+        .column-nav {
+            position: relative;
+            right: 51px;
+        }
+
+        .column-about {
+            position: relative;
+            right: 11px;
+        }
+
+        .column-support {
+            position: relative;
+            left: 24px;
+        }
+
+        .column-subscribe {
+            width: 300px;
+            position: relative;
+            left: 33px;
+        }
+    }
+
+    .line {
+        border-top: 1px solid #dedee3;
+        margin-top: 76px;
+
+        .copyright__body {
+            width: 1160px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            .copyright__text {
+                margin: 25px 0 18px 39px;
+                color: #1F2041;
+                opacity: 0.75;
+                font-family: $mainFont serif;
+                font-weight: 500;
+                font-size: 13px;
+            }
+
+            .copyright__icons {
+                margin: 22px 0 18px;
+                position: relative;
+
+                .icons {
+                    padding: 0 20px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.footer-creative {
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    .footer-creative__body {
+        width: 1160px;
+        margin: 0 auto;
+        text-align: center;
+
+        .footer-creative__block {
+            margin-left: 20px;
+
+            .footer-creative__logo {
+                padding: 92px 0 11px;
+
+                .footer-creative__logo-img {
+                    width: 100px;
+                    height: 40px;
+                }
+            }
+
+            .footer-creative__text {
+                font-family: $mainFont serif;
+                font-size: 13px;
+                font-weight: 500;
+                color: #1F2041;
+                opacity: 0.75;
+                padding-bottom: 26px;
+                letter-spacing: 0.1px;
+                word-spacing: -0.2px;
+                line-height: 1.8;
+            }
+
+            .footer-creative__icons {
+                padding-bottom: 103px;
+
+                .icons {
+                    padding: 0 9px;
+
+                }
+            }
+
+
+        }
+    }
+}

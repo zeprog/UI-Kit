@@ -48,8 +48,9 @@ block body
             .form-elements__form
                 .form__subscription-text.text
                     h3.form__title.title Subscription text field
-                include ./includes/inputs/input-mixin/input-mixin.pug
-                +text-field('', '', '', 'form-subscribe', 'form__input')
+                .form__subscription-block
+                    include ./includes/inputs/input-mixin/input-mixin.pug
+                    +text-field('', '', '', 'form-subscribe', 'form__input')
         .form-elements__column-checkbox
             .form-elements__checkbox
                 .checkbox__text.text

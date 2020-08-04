@@ -28,21 +28,23 @@
         }
 
         .header__navigation {
-            padding: 18px 0 22px;
+            padding: 20px 0 22px;
             margin-right: 20px;
+            display: flex;
 
-            .nav {
+            .header__nav {
                 font-family: $mainFont serif;
-                font-size: 14px;
+                font-size: 13.5px;
                 font-weight: normal;
+                margin-top: 6px;
 
                 .nav__link {
                     color: #1F2041;
                     opacity: 0.5;
                     position: relative;
-                    padding-left: 29px;
+                    padding-left: 23px;
                     transition: 0.3s ease;
-                    margin-top: 7px;
+
                     cursor: pointer;
 
                     &:hover {
@@ -58,7 +60,27 @@
                     font-weight: bold;
                 }
 
-                .nav__link_scecial {}
+
+            }
+
+            .header__line {
+                width: 1px;
+                height: 27px;
+                background-color: #e9e9ec;
+                margin: 4px 0px 0 27px;
+            }
+
+            .header__user-name {
+                font-family: $mainFont serif;
+                font-size: 13.5px;
+                font-weight: normal;
+                color: #1F2041;
+                opacity: 0.5;
+                position: relative;
+                padding-left: 28px;
+                transition: 0.3s ease;
+                margin-top: 7px;
+                cursor: pointer;
             }
         }
     }

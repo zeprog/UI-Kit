@@ -1,0 +1,62 @@
+include ../inputs/input-mixin/input-mixin.pug
+
+mixin footers(wrapClass)
+	- var wrapClass
+	if wrapClass == 'footer-widget'
+		div(class=wrapClass).footer-widget
+			.footer-widget__body
+				.footer-widget__column-logo
+					.footer-widget__logo 
+						img(src="assets/img/Logo.svg", alt="").footer-widget__logo-img
+					.footer-widget__text
+						p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+				.footer-widget__column-nav.column-nav
+					- var navLinks = [{'title': 'About Us', 'url': ''},{'title': 'News', 'url': ''},{'title': 'Support', 'url': ''},{'title': 'Products', 'url': ''}]
+					- var title = ['Navigation', 'About us', 'Support', 'Subscribe to our newsletter']
+					.footer-widget__title 
+						h3=title[0]
+					each links in navLinks
+						.footer-widget__text-nav
+							a(href="http://").footer-widget__text_link #{links.title}
+				.footer-widget__column-nav.column-about
+					- var navLinks = [{'title': 'Who we are', 'url': ''},{'title': 'Our team', 'url': ''},{'title': 'Careers', 'url': ''},{'title': 'Investors', 'url': ''}]
+					.footer-widget__title 
+						h3=title[1]
+					each links in navLinks
+						.footer-widget__text-nav
+							a(href="http://").footer-widget__text_link #{links.title}
+				.footer-widget__column-nav.column-support
+					- var navLinks = [{'title': 'Documentation', 'url': ''},{'title': 'Community', 'url': ''},{'title': 'Get in Touch', 'url': ''}]
+					.footer-widget__title 
+						h3=title[2]
+					each links in navLinks
+						.footer-widget__text-nav
+							a(href="http://").footer-widget__text_link #{links.title}
+				.footer-widget__column-nav.column-subscribe
+					.footer-widget__title 
+						h3=title[3]
+					.footer-widget__text-nav
+						p.footer-widget__text Receive our latest news and <br>promotions in your inbox!
+					.footer__form
+						+text-field('email', '', 'Your email address', 'form-subscribe', 'form__input')
+			.line
+				.copyright
+					.copyright__body
+						.copyright__text
+							p Copyright © 2018 Toxin UI Kit. All rights reserved.
+						.copyright__icons
+							- var socialIcons = [{'icon': '<img src="/assets/img/twitter.svg">', 'class': 'icons'}, {'icon': '<img src="/assets/img/facebook.svg">', 'class': 'icons'}, {'icon': '<img src="/assets/img/instagram.svg">', 'class': 'icons'}]
+							each icon in socialIcons
+								a(href="http://" class=`${icon.class}`) !{icon.icon}
+	else
+		.footer-creative
+			.footer-creative__body
+				.footer-creative__block
+					.footer-creative__logo
+						img(src="assets/img/Logo.svg", alt="").footer-creative__logo-img
+					.footer-creative__text
+						p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam <br>pellentesque aliquam curabitur cociis.
+					.footer-creative__icons
+						- var socialIcons = [{'icon': '<img src="/assets/img/twitter.svg">', 'class': 'icons'}, {'icon': '<img src="/assets/img/facebook.svg">', 'class': 'icons'}, {'icon': '<img src="/assets/img/instagram.svg">', 'class': 'icons'}]
+						each icon in socialIcons
+							a(href="http://" class=`${icon.class}`) !{icon.icon}

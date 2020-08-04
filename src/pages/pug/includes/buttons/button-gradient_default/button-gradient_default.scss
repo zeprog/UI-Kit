@@ -3,6 +3,8 @@
     font-weight: bolder;
     font-size: 11px;
     text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-weight: 600;
     color: #fff;
     background: rgba(187, 156, 255, 1);
     background: -moz-linear-gradient(top, rgba(187, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
@@ -37,11 +39,15 @@
 }
 
 .button-small-gradient-position_active {
-    padding: 9px 21px 10px 18px;
+    padding: 9px 19px 9px 18px;
 }
 
 .button-big-gradient-position {
     padding: 14px 14px 14px 25px;
+}
+
+.button-gradient__wrap {
+    padding-left: 20px;
 }
 
 .button-wrap {

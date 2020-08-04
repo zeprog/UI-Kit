@@ -1,5 +1,5 @@
-include ../../buttons/button-white_default/button-white_default.pug
-include ../../buttons/button-gradient_default/button-gradient_default.pug
+include ../buttons/button-white_default/button-white_default.pug
+include ../buttons/button-gradient_default/button-gradient_default.pug
 
 mixin header-standart(headerButton, name)
     .header
@@ -7,7 +7,7 @@ mixin header-standart(headerButton, name)
             .header__logo
                 img(src="assets/img/Logo.svg", alt="").header__logo-img
             .header__navigation
-                nav.nav
+                nav.header__nav
                     - var arrow = '<img src="/assets/img/arrow-down.svg">';
                     - var classLink = 'nav__link';
                     - var classActive = 'nav_active';
@@ -17,10 +17,13 @@ mixin header-standart(headerButton, name)
                     each link in links
                         a(href=`${link.url}`, class=classLink, class=[`${link.active}`, ]) #{link.name} !{link.arrow}
                     
-                    - var headerButton
-                    if headerButton == 'header__button'
+                - var headerButton
+                if headerButton == 'header__button'
+                    .header__button
                         +button-white('Login', 'button-white__wrap', 'button-white', '', 'button-white-position_active')
-                        +button-gradient('Register', 'button-gradient', '', '', 'button-small-gradient-position_active')
-                    else
-                        .line
-                        p(class=classLink)= name
+                    .header__button
+                        +button-gradient('Register', 'button-gradient', '', 'button-gradient__wrap', 'button-small-gradient-position_active')
+                else
+                    .header__line
+                    - var headerUserName = 'header__user-name'
+                    p(class=headerUserName)= name
