@@ -1,4 +1,6 @@
 @import "../../utils/vars.scss";
+@import '../pug/includes/buttons/button-gradient_default/button-gradient_default.scss';
+@import '../pug/includes/headers/header__standart/header__standart.scss';
 
 * {
     box-sizing: border-box;
@@ -24,52 +26,6 @@ a {
     height: 100%;
 }
 
-.header {
-    background-color: #fff;
-    height: 70px;
-    margin-top: 69px;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-
-    .header__body {
-        width: 1160px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-
-        .header__logo {
-            padding: 14px 0 15px 47px;
-        }
-
-        .header__navigation {
-            padding: 18px 0 22px;
-
-            .nav {
-                font-family: $mainFont serif;
-                font-size: 14px;
-                font-weight: normal;
-
-                .nav__link {
-                    color: #1F2041;
-                    opacity: 0.5;
-                    position: relative;
-                    right: -68px;
-                    padding-right: 29px;
-                    transition: 0.3s ease;
-
-                    &:hover {
-                        color: #1F2041;
-                        opacity: 0.75;
-                        font-weight: bold;
-                    }
-                }
-
-                .nav__link_scecial {
-                    right: -74px;
-                }
-            }
-        }
-    }
-}
 
 i {
     border: solid #1F2041;
@@ -127,66 +83,12 @@ i {
     }
 }
 
-.header-loged {
-    background-color: #fff;
-    height: 70px;
-    margin-top: 40px;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+.header__wrap {
+    margin-top: 60px;
+}
 
-    .header-loged__body {
-        width: 1160px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-
-        .header-loged__logo {
-            padding: 14px 0 15px 47px;
-        }
-
-        .header-loged__navigation {
-            padding: 25px 0 22px;
-
-            .nav-loged {
-                font-family: $mainFont serif;
-                font-size: 14px;
-                font-weight: normal;
-                display: flex;
-
-                .nav-loged__link {
-                    color: #1F2041;
-                    opacity: 0.5;
-                    position: relative;
-                    padding-left: 29px;
-                    transition: 0.3s ease;
-                    right: -73px;
-
-                    &:hover {
-                        color: #1F2041;
-                        opacity: 0.75;
-                        font-weight: bold;
-                    }
-                }
-
-                .nav-loged__link_scecial {
-                    right: -82px;
-                }
-
-                .line {
-                    width: 1px;
-                    height: 30px;
-                    background: #1F2041;
-                    opacity: 0.25;
-                    margin: -5px 30px 0;
-                    right: -75px;
-                    position: relative;
-                }
-
-                .nav-loged__link_user {
-                    right: -45px;
-                }
-            }
-        }
-    }
+.header__wrap-loged {
+    margin-top: 35px;
 }
 
 .footer-widget {

@@ -1,0 +1,26 @@
+include ../../buttons/button-white_default/button-white_default.pug
+include ../../buttons/button-gradient_default/button-gradient_default.pug
+
+mixin header-standart(headerButton, name)
+    .header
+        .header__body
+            .header__logo
+                img(src="assets/img/Logo.svg", alt="").header__logo-img
+            .header__navigation
+                nav.nav
+                    - var arrow = '<img src="/assets/img/arrow-down.svg">';
+                    - var classLink = 'nav__link';
+                    - var classActive = 'nav_active';
+                    - var classSpecial = 'nav__link_scecial'
+                    - var links = [{'name':"Home", 'url':"", 'active': `${classActive}`},{'name':"About Us", 'url':"", 'active': ''},{'name':"Services", 'url':"", 'arrow': `${arrow}`, 'active': ''},{'name':"Careers", 'url':"", 'active': ''},{'name':"News", 'url':"", 'active': ''},{'name':"Documentation", 'url':"", 'active': ''}];
+                    
+                    each link in links
+                        a(href=`${link.url}`, class=classLink, class=[`${link.active}`, ]) #{link.name} !{link.arrow}
+                    
+                    - var headerButton
+                    if headerButton == 'header__button'
+                        +button-white('Login', 'button-white__wrap', 'button-white', '', 'button-white-position_active')
+                        +button-gradient('Register', 'button-gradient', '', '', 'button-small-gradient-position_active')
+                    else
+                        .line
+                        p(class=classLink)= name

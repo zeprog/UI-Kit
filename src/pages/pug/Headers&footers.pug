@@ -7,35 +7,11 @@ block body
     .body
         .logo
             img.logo__icon(src="assets/img/Group.svg", alt="")
-        section.header
-            .header__body
-                .header__logo
-                    img(src="assets/img/Logo.svg", alt="")
-                .header__navigation
-                    nav.nav
-                        a(href="http://").nav__link.nav__link_scecial Home
-                        a(href="http://").nav__link.nav__link_scecial About Us
-                        a(href="http://").nav__link.nav__link_scecial Services <i class='arrow'></i>
-                        a(href="http://").nav__link Careers
-                        a(href="http://").nav__link News
-                        a(href="http://").nav__link Documentation
-                        a(href="http://").button <span> Login </span>
-                        a(href="http://").button <span> Register </span> 
-
-        section.header-loged
-            .header-loged__body
-                .header-loged__logo
-                    img(src="assets/img/Logo.svg", alt="")
-                .header-loged__navigation
-                    nav.nav-loged
-                        a(href="http://").nav-loged__link.nav-loged__link_scecial Home
-                        a(href="http://").nav-loged__link.nav-loged__link_scecial About Us
-                        a(href="http://").nav-loged__link.nav-loged__link_scecial Services <i class='arrow'></i>
-                        a(href="http://").nav-loged__link Careers
-                        a(href="http://").nav-loged__link News
-                        a(href="http://").nav-loged__link Documentation
-                        .line
-                        a(href="http://").nav-loged__link.nav-loged__link_user Cosmin Negoita
+        include ./includes/headers/header__standart/header__standart
+        .header__wrap
+            +header-standart('header__button')
+        .header__wrap-loged
+            +header-standart('header__user', 'Cosmin Negoita')
 
         section.footer-widget.footer-widget__line
             .footer-widget__body
